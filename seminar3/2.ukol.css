@@ -1,0 +1,8 @@
+.text-box {
+    padding: 1px;
+    border: 1px dashed #0000A0;
+    display: inline-block;
+    color: #0000A0;
+    margin: 2px;
+    padding: 2px;
+}

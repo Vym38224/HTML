@@ -1,0 +1,41 @@
+
+body div p:first-child::first-letter,
+body div p:last-child::first-letter {
+    font-weight: bold;
+    color:grey; 
+}
+
+body div p:nth-child(2)::first-letter {
+    font-weight: bold;
+    color:blue;
+}
+.barva1{
+    color: grey;
+}
+
+.barva2{
+    color:blue
+}
+p:nth-of-type(5){
+    color: blue
+}
+p:nth-of-type(4){
+    color: grey
+}
+p:nth-of-type(6){
+    color: grey
+}
+a{
+    color:darkcyan
+}
+span{
+    color: gray;
+}
+a:hover {
+    color: rgb(17, 0, 255); 
+}
+span a{
+    color: inherit
+}
+
+

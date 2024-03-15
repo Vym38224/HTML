@@ -1,0 +1,32 @@
+/* opravdu valmi špatně napsané CSS
+upravte HTML a CSS tak, aby bylo snadno spravovatelné, srozumitelné a rozšířitelné a zachovejte vizualizaci (OPRAVENO)*/
+.card{
+    padding: 1em;
+    width: 60ch;
+    margin: 1em auto;
+}
+.card_primary {
+    border: 1px solid darkgreen;
+    color: #303030;
+    background-color: lightgreen;
+}
+.card_secondary{
+    border: 1px solid black;
+    color: black;
+    background-color: lightblue;
+}
+.text{
+    color:green
+}
+.underline_text{
+    background-color: yellow;
+    padding: 0em 0.4em;
+}
+.warning_text{
+    background-color: red;
+}
+
+
+
+
+

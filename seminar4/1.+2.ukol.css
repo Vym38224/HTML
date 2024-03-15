@@ -1,0 +1,25 @@
+.box{ 
+    border: 1px solid mediumvioletred;
+    padding: 1em;
+    margin: 0.5em;
+}
+.box--primary{
+    background-color: mediumvioletred;
+}
+.box--secondary{
+    background-color: white;
+}
+.box__title{
+    width: fit-content;
+    margin: 0em;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: inline-block;
+}
+.box__title--primary{
+    color: white;
+}
+.box__title--secondary{
+    color: mediumvioletred;
+}
