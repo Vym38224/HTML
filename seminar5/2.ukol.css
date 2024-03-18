@@ -1,0 +1,37 @@
+body {
+    display: block;
+    margin: 0px;
+}
+.grid {
+    display: grid;
+    padding: 1em;
+    border: 1px solid black;
+    margin: 1em auto;
+}
+.grid--hf {
+    width: 500px;
+    margin: 0 auto; 
+}
+.grid--nav {
+    background-color: rgb(166, 205, 221);
+}
+.box--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    margin: 1em auto;
+    max-width: 500px;
+}
+.box {
+    display: grid;
+    padding: 1em;
+    border: 1px solid black; 
+    aspect-ratio: 1;
+    width: 120px;
+    padding-right: 29px;
+    margin-bottom: 1em;
+    margin-right: 1em; 
+}
+.box--special {
+    margin-left: -16px; /* Upravuje zarovnání levého okraje pro čtverce A a D */
+}
+
