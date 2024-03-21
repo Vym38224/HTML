@@ -1,0 +1,21 @@
+.flex{
+    display: flex;
+    margin: auto;
+    width: 60ch;
+    padding: 1em;
+    border: 1px solid #0066cc;
+    justify-content: space-between; 
+    margin-bottom: 16px;
+}
+p {
+    margin: 0; 
+    padding-left: 1em;
+    padding-top: 1em;
+}
+h1 {
+    margin: 0;
+    padding-left: 0.5em;
+}
+img {
+    max-width: 100px; 
+}

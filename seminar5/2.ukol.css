@@ -1,37 +1,26 @@
 body {
-    display: block;
     margin: 0px;
 }
-.grid {
-    display: grid;
-    padding: 1em;
-    border: 1px solid black;
-    margin: 1em auto;
+.grid__item--hf {
+    grid-column: 2 / 5;
 }
-.grid--hf {
-    width: 500px;
-    margin: 0 auto; 
-}
-.grid--nav {
+.grid__item--nav {
+    grid-column: span 5;
     background-color: rgb(166, 205, 221);
 }
-.box--container {
+.grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    margin: 1em auto;
-    max-width: 500px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 3fr 3fr 1fr;
+    gap: 1em;
 }
-.box {
-    display: grid;
+.grid__item{
+    border: 1px solid black;
     padding: 1em;
-    border: 1px solid black; 
-    aspect-ratio: 1;
-    width: 120px;
-    padding-right: 29px;
-    margin-bottom: 1em;
-    margin-right: 1em; 
 }
-.box--special {
-    margin-left: -16px; /* Upravuje zarovnání levého okraje pro čtverce A a D */
+.grid__item--1{
+    grid-column: 2; 
 }
-
+.text{
+    padding-left: 320px;
+}

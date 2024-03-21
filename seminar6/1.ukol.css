@@ -1,0 +1,17 @@
+.flex{
+    display: flex;
+    margin: auto;
+    width: 75;
+    flex-grow: 1;
+    
+}
+.flex__item{
+    border: 1px solid black;
+    padding: 1em;
+    text-align: center;
+    flex-grow: 1;
+   
+}
+.flex__item--A{
+    flex-grow: 2;
+}
