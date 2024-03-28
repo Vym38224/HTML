@@ -1,0 +1,21 @@
+body{
+    max-width: 1140px;
+}
+.flex {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.flex__item{
+    border: 1px;
+    text-align: left;
+    margin-right: 1em;
+    padding: 1em;
+
+}
+
+@media (min-width:960px){
+ 
+}
+
