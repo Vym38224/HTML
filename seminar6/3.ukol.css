@@ -1,7 +1,10 @@
 .flex{
     display: flex;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6bdcb89c3714816e64ae404e3737ae8b552a5048
 .flex__main{
     padding: 1em;
     margin-left: 0px;
@@ -19,8 +22,12 @@
 .box__right {
     justify-content: flex-end;
 }
+<<<<<<< HEAD
 
 .box__item{
+=======
+.normal{
+>>>>>>> 6bdcb89c3714816e64ae404e3737ae8b552a5048
     border: 1px solid black;
     padding: 1em;
     margin-left: -1px;
