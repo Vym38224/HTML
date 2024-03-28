@@ -1,29 +1,33 @@
 .flex{
     display: flex;
+}
+
+.flex__main{
     padding: 1em;
-    border: 1px solid black;
     margin-left: 0px;
     margin-right: 0px;
-}
-.flex__main{
     width: 25em;
     margin: auto;
-    display: flex; 
     justify-content: space-between;
+    border: 1px solid black;
 }
+
 .box__left {
-    display: flex;
     justify-content: flex-start; 
-    
 }
+
 .box__right {
-    display: flex;
     justify-content: flex-end;
 }
-.fix_right_line{
-    border-right: 0;
+
+.box__item{
+    border: 1px solid black;
+    padding: 1em;
+    margin-left: -1px;
+    margin-right: 0px;
 }
-.special{
+
+.box__item--special{
     background-color: #0066cc;
     color: white;
 }
