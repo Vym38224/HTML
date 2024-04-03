@@ -3,9 +3,21 @@ body {
     margin: auto; 
     margin-top:4vw;
     padding: 1em; 
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:"Roboto", sans-serif;
     line-height: 1.5;
 }
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
 header{
     padding-bottom: 6vw;
 }
@@ -63,10 +75,15 @@ h2{
     border: 1px;
     text-align: left;
 }
-h3 h4{
+h4{
     font-weight: 900;
     color:#0b0b15;
 }
+h3{
+    font-weight: 900;
+    color:#0b0b15;
+}
+
 p{
     font-weight: 400;
     color: #555555;
@@ -128,5 +145,7 @@ p{
 .item__E,
 .item__F {
     flex: 1 1 300px; 
-    max-width: 300px; 
+    max-width: 280px; 
 }
+/* zakulacení border-radius */
+/* na githubu kod jak udelat kolecko (seminar8) */

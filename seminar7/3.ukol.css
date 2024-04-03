@@ -19,7 +19,7 @@ body {
 .item__D,
 .item__E,
 .item__F {
-    flex: 1 1 300px; 
+    grid: 1 1 300px; 
     max-width: 300px; 
 }
 
