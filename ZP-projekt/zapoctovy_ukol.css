@@ -78,9 +78,12 @@ p{
     }
 }
 .wrapper{
-    display: grid;
-    grid-gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
 }
+
 .grif_biography--item-A{
     grid-area:A;
     padding-left: 1em;
@@ -118,41 +121,12 @@ p{
     font-size: 0.6em;
 }
 
-.item__A {grid-area:A;}
-.item__B {grid-area:B;}
-.item__C {grid-area:C;}
-.item__D {grid-area:D;}
-.item__E {grid-area:E;}
-.item__F {grid-area:F;}
-
-@media (min-width: 960px) {
-    .wrapper {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
-            "A B C"
-            "D E F";
-    }
-}
-
-@media (min-width: 560px) and (max-width: 959px) {
-    .wrapper {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-            "A B"
-            "C D"
-            "E F";
-    }
-}
-
-@media (min-width: 360px) and (max-width: 559px) {
-    .wrapper {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "A"
-            "B"
-            "C"
-            "D"
-            "E"
-            "F";
-    }
+.item__A,
+.item__B,
+.item__C,
+.item__D,
+.item__E,
+.item__F {
+    flex: 1 1 300px; 
+    max-width: 300px; 
 }
