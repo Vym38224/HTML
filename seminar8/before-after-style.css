@@ -1,0 +1,21 @@
+.try{
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: fit-content;
+    margin-top: 10rem;
+    z-index: 1;
+    position: relative;
+}
+.try::after{
+    content:" ";
+    color: violet;
+    display: inline-block;
+    position: absolute;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    top: -1rem;
+    left: -1rem;
+    z-index: -1;
+}
