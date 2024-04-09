@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="zapoctovy_ukol.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -36,12 +38,12 @@
         <div class="grid__biography">
             <img clas="grif_biography--item-A" src="podklady/avatar.svg"
             alt="" width="200" height="200">
-            <hgroup clas="grif_biography--item-B" >
+            <hgroup class="grif_biography--item-B" >
                 <h2>Jane Doe</h2>
                 <p class="little_subtitle">Full-Stack Developer</p>
             </hgroup> 
             <div class="grif_biography--item-D" >
-                <h3>Biography</h3>
+                <h3 class="section_title">Biography</h3>
                 <p>I'm Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco.
                     code and create web elements for amazing people around the world. I like work with new people.
                     New people new Experiences.
@@ -56,7 +58,7 @@
         </div>
     </section>
     <section id="what-i-do">
-        <h3>What I do?</h3>
+        <h3 class="section_title">What I do?</h3>
         <div class="flex">
             <article class="what-i-do_flex__item">
                 <h4>Web Design</h4>
@@ -82,7 +84,7 @@
         </div>
     </section>
     <section id="awards">
-        <h3>Awards</h3>
+        <h3 class="section_title">Awards</h3>
         <div>
             <!--<img src="" alt="Creative Designer">-->
         </div>
@@ -94,100 +96,82 @@
         </div>
     </section>
     <section id="experience">
-        <h3>Experience</h3>
+        <h3 class="section_title">Experience</h3>
         <article>
             <h4>Google LLC - Sr.Front-end Engineer</h4>
-            <span>
-                <time>Feb 2021 -</time>
-                <time>Present</time>
-            </span>
-            <p>Full Time</p>
+            <p>
+                <time datetime="2021-2">Feb 2021 -</time>
+                <time datetime="">Present</time>
+            </p>
+            <mark class="mark mark__full-time">Full Time</mark>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
                 repellat ut eos. Ipsam</p>
         </article>
         <article>
             <h4>Ridian IT - Visual Designer</h4>
-            <p>Mar 2020 - Present</p>
-            <p>Part Time</p>
+            <p>
+                <time datetime="2020-3">Mar 2020 -</time>
+                <time datetime="">Present</time>
+            </p>    
+            <mark class="mark mark__part-time">Part Time</mark>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
                 repellat ut eos. Ipsam</p>
         </article>
         <article>
             <h4>IB Themes - Animation Artist</h4>
-            <p>Jan 2019 - Present</p>
-            <p>Full Time</p>
+            <p>
+                <time datetime="2019-1">Jan 2019 -</time>
+                <time>Present</time>
+            </p>
+            <mark class="mark mark__full-time">Full Time</mark>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
                 repellat ut eos. Ipsam</p>   
         </article>
     </section>
     <section id="my-portfolio">
-        <h3>My Portfolio</h3>
+        <h3 class="section_title">My Portfolio</h3>
         <div class="wrapper">
             <article class="item__A">
-                <img src="https://dummyimage.com/640x360/f7f7ff/555"
-                srcset="https://dummyimage.com/640x360/f7f7ff/555 320w,
-                        https://dummyimage.com/640x360/f7f7ff/555 186w,
-                        https://dummyimage.com/640x360/f7f7ff/555 350w"
-                width="320" height="180" alt="">
-                <h4>Lorem ipsum <p class="date">07/13/2305</p></h4>
+                <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                     eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
             </article>
             <article class="item__B">
-                <img src="https://dummyimage.com/640x360/f7f7ff/555"
-                srcset="https://dummyimage.com/640x360/f7f7ff/555 320w,
-                        https://dummyimage.com/640x360/f7f7ff/555 186w,
-                        https://dummyimage.com/640x360/f7f7ff/555 350w"
-                width="320" height="180" alt="">
-                <h4>Lorem ipsum <p class="date">07/13/2305</p></h4>
+                <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                     eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
             </article>
             <article class="item__C">
-                <img src="https://dummyimage.com/640x360/f7f7ff/555"
-                srcset="https://dummyimage.com/640x360/f7f7ff/555 320w,
-                        https://dummyimage.com/640x360/f7f7ff/555 186w,
-                        https://dummyimage.com/640x360/f7f7ff/555 350w"
-                width="320" height="180" alt="">
-                <h4>Lorem ipsum <p class="date">07/13/2305</p></h4>
+                <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                     eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
             </article>
             <article class="item__D">
-                <img src="https://dummyimage.com/640x360/f7f7ff/555"
-                srcset="https://dummyimage.com/640x360/f7f7ff/555 320w,
-                        https://dummyimage.com/640x360/f7f7ff/555 186w,
-                        https://dummyimage.com/640x360/f7f7ff/555 350w"
-                width="320" height="180" alt="">
-                <h4>Lorem ipsum <p class="date">07/13/2305</p></h4>
+                <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                     eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
             </article>
             <article class="item__E">
-                <img src="https://dummyimage.com/640x360/f7f7ff/555"
-                srcset="https://dummyimage.com/640x360/f7f7ff/555 320w,
-                        https://dummyimage.com/640x360/f7f7ff/555 186w,
-                        https://dummyimage.com/640x360/f7f7ff/555 350w"
-                width="320" height="180" alt="">
-                <h4>Lorem ipsum <p class="date">07/13/2305</p></h4>
+                <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                     eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
             </article>
             <article class="item__F">
-                <img src="https://dummyimage.com/640x360/f7f7ff/555"
-                srcset="https://dummyimage.com/640x360/f7f7ff/555 320w,
-                        https://dummyimage.com/640x360/f7f7ff/555 186w,
-                        https://dummyimage.com/640x360/f7f7ff/555 350w"
-                width="320" height="180" alt="">
-                <h4>Lorem ipsum <p class="date">07/13/2305</p></h4>
+                <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                     eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
@@ -195,7 +179,7 @@
         </div>
     </section>
     <section id="contact">
-        <h3>Contact</h3>
+        <h3 class="section_title">Contact</h3>
         <h4>What's your story? Get in touch</h4>
         <p>Always avaiable for freelancing if the right project comes along, Feel free to contact me.</p>
         <!--<img src="" alt="">-->
@@ -209,7 +193,7 @@
     <footer>
         <!--<img src="" alt="">-->
         <!--<img src="" alt="">-->
-        <p>© Lorem ipsum dolor sit amet 2022</p>
+        <p><small>© Lorem ipsum dolor sit amet 2022</small></p>
     </footer>
 </body>
 </html>

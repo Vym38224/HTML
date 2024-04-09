@@ -6,17 +6,6 @@ body {
     font-family:"Roboto", sans-serif;
     line-height: 1.5;
 }
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
 
 header{
     padding-bottom: 6vw;
@@ -33,12 +22,42 @@ h1{
 .hello{
     margin-bottom: -2em;
 }
+
+.section_title{
+    width: fit-content;
+    z-index: 1;
+    position: relative;
+}
+
+.section_title::after{
+    content:" ";
+    display: inline-block;
+    position: absolute;
+    background-color: #ff9301;
+    opacity: 50%;
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    top: -0.3rem;
+    left: -0.5rem;
+    z-index: -1;
+}
+
 .subtitle{
     font-weight: 900;
     font-size: 2em;
     color:#ff9301;
     margin-top: -1em;
 }
+
+.little_subtitle{
+    margin-top: 0em;
+    color:#ff9301;
+    padding-left: 2.5em;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
 .menu{
     margin-top: 3em;
     margin-bottom: 3em;
@@ -50,7 +69,7 @@ h1{
     color: #555555;
 }
 .menu__item:hover{
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid #ff9301;
 }
 h2{
     font-weight: 900;
@@ -60,13 +79,7 @@ h2{
     margin-bottom: 0em;
     padding-left: 1em;
 }
-.little_subtitle{
-    margin-top: 0em;
-    color:#ff9301;
-    padding-left: 2.5em;
-    font-size: 0.9em;
-    font-weight: 400;
-}
+
 .flex {
     display: flex;
     align-items: center;
@@ -88,7 +101,28 @@ p{
     font-weight: 400;
     color: #555555;
     font-size: 0.9em;
+    margin-bottom:0em;
 }
+
+.mark{
+    font-weight: 400;
+    font-size: 0.9em;
+    color:white;
+    padding: 0.5em;
+    border-radius: 10%;
+}
+.mark__full-time{
+    background-color:#ff9301;
+}
+.mark__part-time{
+    background-color:#555555;
+}
+
+.date{
+    margin-top: 0;
+    font-size: 0.6em;
+}
+
 @media (max-width:959px){
     .flex {
         flex-direction: column;
@@ -133,10 +167,6 @@ p{
     max-width: 100%; 
 }
 
-.date{
-    margin-top: 0;
-    font-size: 0.6em;
-}
 
 .item__A,
 .item__B,
@@ -147,5 +177,6 @@ p{
     flex: 1 1 300px; 
     max-width: 280px; 
 }
-/* zakulacení border-radius */
-/* na githubu kod jak udelat kolecko (seminar8) */
+
+
+/* na githubu kod jak udelat kolecko v nadpisu sekce (seminar8) */
