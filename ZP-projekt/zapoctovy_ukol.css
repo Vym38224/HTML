@@ -10,6 +10,7 @@ body {
 header{
     padding-bottom: 6vw;
 }
+
 section{
     padding-top: 4vw;
     padding-bottom: 4vw;
@@ -122,6 +123,9 @@ p{
     margin-top: 0;
     font-size: 0.6em;
 }
+.background__secondary{
+    background-color: #d4d4d4;
+}
 
 @media (max-width:959px){
     .flex {
@@ -179,4 +183,5 @@ p{
 }
 
 
-/* na githubu kod jak udelat kolecko v nadpisu sekce (seminar8) */
+/* na githubu kod jak udelat kolecko v nadpisu sekce (seminar8) 
+pozadi barvy rozdeit do 3 divu a obarvit, obarvit celou sekci těma barvama */
