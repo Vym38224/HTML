@@ -37,7 +37,8 @@ p{
 .flex-contact{display:flex;}
 .flex-contact__item{
     flex: 0 0 50%; 
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 .flex-contact__item--left{padding-top: 2.5vw;}
 .flex-contact__touch{flex-direction: column;}
 .flex-contact__touch--item{padding-top: 0.6em;}
