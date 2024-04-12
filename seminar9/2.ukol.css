@@ -112,9 +112,9 @@ button{
       flex-direction: column;
       padding-bottom: 2vw;
     }  
-    .map {
-        margin-top: 1vw;
-    }
+    .map {margin-top: 1vw;
+          margin:auto;}
+    .flex-contact__item--left{padding-top: 0em;}
   }
 @media (max-width: 560px) {
 .form-group {
