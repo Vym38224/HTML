@@ -8,8 +8,10 @@ body {
 }
 
 header{
-    padding-bottom: 6vw;
+    display:flex;
+
 }
+
 
 section{
     padding-top: 4vw;
@@ -124,7 +126,7 @@ p{
     font-size: 0.6em;
 }
 .background__secondary{
-    background-color: #d4d4d4;
+    background-color: #f7f7ff;
 }
 
 @media (max-width:959px){
