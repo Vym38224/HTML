@@ -24,16 +24,15 @@ body {
     left: -0.5rem;
     z-index: -1;
 }
-h4{
-    font-weight: 900;
-    color:#0b0b15;}
-h3{
+h4 h3{
     font-weight: 900;
     color:#0b0b15;}
 p{
     font-weight: 400;
     color: #555555;
     margin-bottom:0em;}
+address{font-style: normal;}
+
 .flex-contact{display:flex;}
 .flex-contact__item{
     flex: 0 0 50%; 
@@ -56,38 +55,24 @@ p{
     vertical-align: middle;
     margin-right: 0.1em; 
 }
-.form-group {display: flex;}
-input[type="text"],
-textarea {
-    width: 50%;
-    border: 1px solid #bbbbbb;
-    padding:1em;
-    margin-bottom: 1em;
-    margin-right: 1em; 
+.flex-form {
+    display: flex;
+    flex-direction: column 1fr 1fr ;
+    margin-right: -1em;
 }
-input[type="email"],
-textarea {
-    width: 50%;
-    border: 1px solid #bbbbbb;
-    padding:1em;
-    margin-bottom: 1em;
-}
-input[type="subject"],
-textarea {
-  width: 100%;
-  border: 1px solid #bbbbbb;
-  padding:1em;
-  margin-bottom: 1em;
-}
-input[type="comment"],
-textarea {
-    font-family: "Roboto", sans-serif;
+.flex-form input,
+.flex-form textarea {
     width: 100%;
     border: 1px solid #bbbbbb;
-    padding:1em;
-    padding-bottom: 4em;
+    padding: 1em;
     margin-bottom: 1em;
-    margin-right: 0px;
+    margin-right: 1em;
+}
+textarea{
+    height: 5em;
+}
+.flex-form button {
+    align-self: flex-start; 
 }
 button{
     padding: 0.7em;
@@ -112,17 +97,14 @@ button{
       flex-direction: column;
       padding-bottom: 2vw;
     }  
-    .map {margin-top: 1vw;
-          margin:auto;}
+    .map {margin-top: 1vw;}
     .flex-contact__item--left{padding-top: 0em;}
+    
   }
 @media (max-width: 560px) {
-.form-group {
-    flex-direction: column; 
-}
-input[type="text"],
-input[type="email"] {
-    width: 100%; 
-}
+    .flex-form {
+        flex-direction: column; 
+        margin-right: 1.5em;
+    }
 }
   
