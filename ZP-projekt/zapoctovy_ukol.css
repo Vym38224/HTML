@@ -1,18 +1,19 @@
-body {
-    max-width: 1140px;
-    margin: auto; 
-    margin-top: 4vw;
-    padding: 1em; 
+body { 
+    margin: 0;
+    margin-top: 4vw; 
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
+    
 }
-
+.background__color--primary{background-color: white;}
+.background__color--secondary{background-color: #f7f7ff;}
+section, header, footer {
+    max-width: 1140px;
+    margin: auto; 
+}
 header{
-    display:flex;
-
+    display: flex;
 }
-
-
 section{
     padding-top: 4vw;
     padding-bottom: 4vw;
@@ -22,16 +23,12 @@ h1{
     font-weight: 900;
     margin: 0em;
 }
-.hello{
-    margin-bottom: -2em;
-}
-
+.hello{margin-bottom: -1em;}
 .section_title{
     width: fit-content;
     z-index: 1;
     position: relative;
 }
-
 .section_title::after{
     content:" ";
     display: inline-block;
@@ -45,14 +42,12 @@ h1{
     left: -0.5rem;
     z-index: -1;
 }
-
 .subtitle{
     font-weight: 900;
     font-size: 2em;
     color:#ff9301;
     margin-top: -1em;
 }
-
 .little_subtitle{
     margin-top: 0em;
     color:#ff9301;
@@ -60,10 +55,8 @@ h1{
     font-size: 0.9em;
     font-weight: 400;
 }
-
 .menu{
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 4.2em;
     padding-left: 0px;
 }
 .menu__item{
@@ -82,31 +75,46 @@ h2{
     margin-bottom: 0em;
     padding-left: 1em;
 }
+/* sekce biography */
+.grid__biography{
+    display: grid;
+    grid-template-columns: 1fr 2.7fr ;
+    grid-template-areas: 
+            "A C"
+            "B C";
+}
+.grid__biography--item-A{
+    grid-area:A;
+    padding-left: 1em;
+}
+.grid__biography--item-B{
+    grid-area:B;
+}
+.grif__biography--item-C{
+    grid-area:D;
+    align-self: center;
+}
 
-.flex {
+
+.what_i_do_flex {
     display: flex;
-    align-items: center;
 }
 .what-i-do_flex__item{
     border: 1px;
     text-align: left;
+    padding: 1em;
+    border-radius: 0.3em;
+    margin-right: 1em;
 }
-h4{
+h3 h4{
     font-weight: 900;
     color:#0b0b15;
 }
-h3{
-    font-weight: 900;
-    color:#0b0b15;
-}
-
 p{
     font-weight: 400;
     color: #555555;
-    font-size: 0.9em;
     margin-bottom:0em;
 }
-
 .mark{
     font-weight: 400;
     font-size: 0.9em;
@@ -120,13 +128,9 @@ p{
 .mark__part-time{
     background-color:#555555;
 }
-
 .date{
     margin-top: 0;
     font-size: 0.6em;
-}
-.background__secondary{
-    background-color: #f7f7ff;
 }
 
 @media (max-width:959px){
@@ -141,26 +145,6 @@ p{
     justify-content: center;
 }
 
-.grif_biography--item-A{
-    grid-area:A;
-    padding-left: 1em;
-}
-.grif_biography--item-B{
-    grid-area:B;
-}
-.grif_biography--item-C{grid-area:C;}
-.grif_biography--item-D{
-    grid-area:D;
-    align-self: center;
-}
-
-.grid__biography{
-    display: grid;
-    grid-template-columns: 1fr 2.7fr ;
-    grid-template-areas: 
-            "A D"
-            "B D";
-}
 
 .item__A img,
 .item__B img,
@@ -172,8 +156,6 @@ p{
     margin: 0 auto; 
     max-width: 100%; 
 }
-
-
 .item__A,
 .item__B,
 .item__C,
@@ -184,7 +166,85 @@ p{
     max-width: 280px; 
 }
 
+/* sekce contact */
+address{font-style: normal;}
 
-/* na githubu kod jak udelat kolecko v nadpisu sekce (seminar8) 
-pozadi barvy rozdeit do 3 divu a obarvit, obarvit celou sekci těma barvama
-halvicka je flex a nav je flex ve flexu */
+.flex-contact{display:flex;}
+.flex-contact__item{
+    flex: 0 0 50%; 
+    box-sizing: border-box;
+}
+.flex-contact__item--left{padding-top: 2.5vw;}
+.flex-contact__touch{flex-direction: column;}
+.flex-contact__touch--item{padding-top: 0.6em;}
+.flex-contact__touch--item-marker{padding-left: 3px;}
+.flex-contact__touch--item-mobile{padding-left: 5px;}
+.flex-contact__touch--sup{margin-left:-4px}
+.flex-contact__touch--right{
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+    padding-left: 1em;
+}
+.flex-contact__touch--item img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.1em; 
+}
+.flex-form {
+    display: flex;
+    flex-direction: column 1fr 1fr ;
+    margin-right: -1em;
+}
+.flex-form input,
+.flex-form textarea {
+    width: 100%;
+    border: 1px solid #bbbbbb;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+textarea{
+    height: 5em;
+}
+.flex-form button {
+    align-self: flex-start; 
+}
+button{
+    padding: 0.7em;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.map {
+    margin-top: 3.5vw;
+    position: relative;
+    height: 15em; 
+}
+.map iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
+@media(max-width: 960px) {
+    .flex-contact {
+      flex-direction: column;
+      padding-bottom: 2vw;
+    }  
+    .map {margin-top: 1vw;}
+    .flex-contact__item--left{padding-top: 0em;}
+    
+  }
+@media (max-width: 560px) {
+    .flex-form {
+        flex-direction: column; 
+        margin-right: 1.5em;
+    }
+}
+
+
+/* 
+pozadi barvy rozdelit do 3 divu a obarvit, obarvit celou sekci těma barvama
+*/
