@@ -1,3 +1,4 @@
+/* zakladni nastaveni */
 body { 
     margin: 0;
     margin-top: 4vw; 
@@ -11,25 +12,38 @@ section, header, footer {
     max-width: 1140px;
     margin: auto; 
 }
-header{
-    display: flex;
-}
 section{
     padding-top: 4vw;
-    padding-bottom: 4vw;
 }
 h1{
     font-size: 6em;
     font-weight: 900;
     margin: 0em;
 }
+h2{
+    font-weight: 900;
+    color:#0b0b15;
+    font-size: 1.75em;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    padding-left: 1em;
+}
+h3 h4{
+    font-weight: 900;
+    color:#0b0b15;
+}
+p{
+    font-weight: 400;
+    color: #555555;
+    margin-bottom:0em;
+}
 .hello{margin-bottom: -1em;}
-.section_title{
+.section__title{
     width: fit-content;
     z-index: 1;
     position: relative;
 }
-.section_title::after{
+.section__title::after{
     content:" ";
     display: inline-block;
     position: absolute;
@@ -51,10 +65,12 @@ h1{
 .little_subtitle{
     margin-top: 0em;
     color:#ff9301;
-    padding-left: 2.5em;
+    padding-left: 1.8em;
     font-size: 0.9em;
     font-weight: 400;
 }
+/* header */
+.header_flex{display: flex;}
 .menu{
     margin-top: 4.2em;
     padding-left: 0px;
@@ -67,54 +83,47 @@ h1{
 .menu__item:hover{
     border-bottom: 3px solid #ff9301;
 }
-h2{
-    font-weight: 900;
-    color:#0b0b15;
-    font-size: 2em;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    padding-left: 1em;
-}
+
 /* sekce biography */
 .grid__biography{
     display: grid;
     grid-template-columns: 1fr 2.7fr ;
     grid-template-areas: 
-            "A C"
-            "B C";
+            "A B";
 }
-.grid__biography--item-A{
-    grid-area:A;
-    padding-left: 1em;
+.grid__biography--item-A {
+    grid-area: A;
 }
 .grid__biography--item-B{
     grid-area:B;
-}
-.grif__biography--item-C{
-    grid-area:D;
     align-self: center;
 }
 
-
-.what_i_do_flex {
-    display: flex;
-}
+/* sekce what i do */
+.what_i_do_flex {display: flex;}
 .what-i-do_flex__item{
     border: 1px;
     text-align: left;
     padding: 1em;
-    border-radius: 0.3em;
+    border-radius: 0.9em;
     margin-right: 1em;
 }
-h3 h4{
-    font-weight: 900;
-    color:#0b0b15;
+.what-i-do_flex__item:last-child{margin-right: 0em;}
+
+/* sekce awards */
+.awards_flex{display: flex;}
+.awards_flex__item{
+    border: 1px;
+    text-align: center;
+    padding: 2em;
+    margin: auto;
+    border-radius: 0.9em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    flex-grow: 1;
 }
-p{
-    font-weight: 400;
-    color: #555555;
-    margin-bottom:0em;
-}
+.awards_flex__item:last-child{margin-right: 0em;}
+/* sekce experience */
 .mark{
     font-weight: 400;
     font-size: 0.9em;
@@ -133,38 +142,22 @@ p{
     font-size: 0.6em;
 }
 
-@media (max-width:959px){
-    .flex {
-        flex-direction: column;
-    }
+/* sekce my portfolio */
+#my-portfolio{margin-bottom: 2em;}
+.my_portfolio_grid{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill,  minmax(300px, 1fr));
 }
-.wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
+.my_portfolio_grid__item{
+    color: #555555;
+    font-weight: 400;
 }
-
-
-.item__A img,
-.item__B img,
-.item__C img,
-.item__D img,
-.item__E img,
-.item__F img {
-    display: block;
-    margin: 0 auto; 
+.my_portfolio__img {
     max-width: 100%; 
 }
-.item__A,
-.item__B,
-.item__C,
-.item__D,
-.item__E,
-.item__F {
-    flex: 1 1 300px; 
-    max-width: 280px; 
-}
+h4{font-weight: 900;
+    color: #0b0b15;}
 
 /* sekce contact */
 address{font-style: normal;}
@@ -228,7 +221,15 @@ button{
     height: 100%;
     filter: grayscale(100%);
 }
-@media(max-width: 960px) {
+@media (max-width:1199px){
+    section, header, footer {
+        margin-left: 4vw;
+        margin-right: 4vw;
+}
+}
+@media (max-width:959px){
+    .what_i_do_flex {flex-direction: column;}
+    .what-i-do_flex__item{margin-bottom: 1em;}
     .flex-contact {
       flex-direction: column;
       padding-bottom: 2vw;
@@ -237,14 +238,10 @@ button{
     .flex-contact__item--left{padding-top: 0em;}
     
   }
-@media (max-width: 560px) {
+@media (max-width: 559px) {
     .flex-form {
         flex-direction: column; 
         margin-right: 1.5em;
     }
 }
 
-
-/* 
-pozadi barvy rozdelit do 3 divu a obarvit, obarvit celou sekci těma barvama
-*/

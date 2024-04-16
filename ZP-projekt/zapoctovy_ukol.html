@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="header_flex">
         <div>
         <hgroup>
             <div class="hello">Hello, My name is</div>
@@ -31,21 +31,22 @@
                 <a class="menu__item" href="#contact">Contact</a>
             </ul>
         </nav>
-    </div>
-        <img src="podklady/avatar.svg" alt="" >
+    </div> 
+    <img src="podklady/avatar.svg" alt="" >  
     </header>
     <div class="background__color--secondary">
         <section id="biography">
             <div class="grid__biography">
-                <figure><img clas="grid__biography--item-A" src="podklady/avatar.svg"
-                alt="" width="200" height="200">
-                <figcaption><hgroup class="grid__biography--item-B" >
+                <figure><img class="grid__biography--item-A" src="podklady/avatar.svg" alt="" width="200" height="200">
+                    <figcaption>
+                        <hgroup>
                             <h2>Jane Doe</h2>
                             <p class="little_subtitle">Full-Stack Developer</p>
-                            </hgroup> 
-                </figcaption></figure>
-                <div class="grid__biography--item-C" >
-                    <h3 class="section_title">Biography</h3>
+                        </hgroup> 
+                    </figcaption>
+                </figure>
+                <div class="grid__biography--item-B" >
+                    <h3 class="section__title">Biography</h3>
                     <p>I'm Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco.
                         code and create web elements for amazing people around the world. I like work with new people.
                         New people new Experiences.
@@ -55,14 +56,14 @@
                         libero dicta voluptatibus?</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore delectus atque id, ex alias
                         quas, tenetur voluptatem exercitationem accusamus dicta fugit laboriosam iste! Eaque facilis
-                        quae libero distinctio voluptate corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Amet laboriosam maiores velit harum vel officiis, eum iure eius impedit placeat inventore labore
-                        eligendi quia quisquam provident blanditiis odio quae eaque</p>
+                        quae libero distinctio voluptate corrupti?
+                    </p>
                 </div>
             </div>
+            <!--<img src="podklady/border-dark.png" alt=""> nevim -->
         </section>
         <section id="what-i-do">
-            <h3 class="section_title">What I do?</h3>
+            <h3 class="section__title">What I do?</h3>
             <div class="what_i_do_flex">
                 <article class="what-i-do_flex__item background__color--primary">
                     <h4>Web Design</h4>
@@ -88,21 +89,26 @@
             </div>
         </section>
         <section id="awards">
-            <h3 class="section_title">Awards</h3>
-            <div>
-                <!--<img src="" alt="Creative Designer">-->
-            </div>
-            <div>
-                <!--<img src="" alt="Yearly Best Perfome">-->
-            </div>
-            <div>
-                <!--<img src="" alt="Best Learner Award">-->
+            <h3 class="section__title">Awards</h3>
+            <div class="awards_flex">
+                <div class="awards_flex__item background__color--primary">
+                    <img src="podklady/trophy-solid.svg" alt="" width="50px">
+                    <p>Creative Designer</p>
+                </div>
+                <div class="awards_flex__item background__color--primary">
+                    <img src="podklady/trophy-solid.svg" alt="" width="50px">
+                    <p>Yearly Best Performer</p>
+                </div>
+                <div class="awards_flex__item background__color--primary">
+                    <img src="podklady/trophy-solid.svg" alt="" width="50px">
+                    <p>Best Learner Award</p>
+                </div>
             </div>
         </section>
     </div>
     <div>
         <section id="experience">
-            <h3 class="section_title">Experience</h3>
+            <h3 class="section__title">Experience</h3>
             <article>
                 <h4>Google LLC - Sr.Front-end Engineer</h4>
                 <p>
@@ -139,45 +145,45 @@
         </section>
         <section id="my-portfolio">
             <div>
-                <h3 class="section_title">My Portfolio</h3>
-                <div class="wrapper">
-                    <article class="item__A">
-                        <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                <h3 class="section__title">My Portfolio</h3>
+                <div class="my_portfolio_grid">
+                    <article class="my_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
                         <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
                     </article>
-                    <article class="item__B">
-                        <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                    <article class="my_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
                         <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
                     </article>
-                    <article class="item__C">
-                        <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                    <article class="mmy_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
                         <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
                     </article>
-                    <article class="item__D">
-                        <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                    <article class="my_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
                         <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
                     </article>
-                    <article class="item__E">
-                        <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                    <article class="mmy_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
                         <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
                     </article>
-                    <article class="item__F">
-                        <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                    <article class="my_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
                         <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
@@ -187,9 +193,9 @@
             </div>
         </section>
     </div>
-    <div>
+    <div class="background__color--secondary">
     <section id="contact">
-        <h3 class="section-title">Contact</h3>
+        <h3 class="section__title">Contact</h3>
         <div class="flex-contact">
             <div class="flex-contact__item flex-contact__item--left">
                 <h4>What's your story? Get in touch</h4>
