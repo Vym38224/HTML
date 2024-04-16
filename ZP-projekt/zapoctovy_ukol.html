@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="header_flex">
-        <div>
+        <div class="header_flex__item--A">
         <hgroup>
             <div class="hello">Hello, My name is</div>
             <h1>Jane Doe</h1>
@@ -32,7 +32,9 @@
             </ul>
         </nav>
     </div> 
-    <img src="podklady/avatar.svg" alt="" >  
+    <div class="header_flex__item--B">
+    <img class="big_avatar"src="podklady/avatar.svg" alt="" >  
+    </div>
     </header>
     <div class="background__color--secondary">
         <section id="biography">
@@ -65,26 +67,26 @@
         <section id="what-i-do">
             <h3 class="section__title">What I do?</h3>
             <div class="what_i_do_flex">
-                <article class="what-i-do_flex__item background__color--primary">
+                <article class="what-i-do_flex__item background__color--primary top_circle">
+                    <img class="top_img" src="podklady/pencil-alt-solid.svg" alt="" width="75px">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Doloribus est, aut fugiat molestiae, dolor voluptates veniam
-                        deserunt accusamus similique dignissimos pariatur quos
-                        saepe sit numquam, aperiam officia quaerat rerum facilis.</p>
+                        deserunt accusamus similique</p>
                 </article>
-                <article class="what-i-do_flex__item background__color--primary">
+                <article class="what-i-do_flex__item background__color--primary top_circle">
+                    <img class="top_img" src="podklady/desktop-solid.svg" alt="" width="75px">
                     <h4>Web Development</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Doloribus est, aut fugiat molestiae, dolor voluptates veniam
-                        deserunt accusamus similique dignissimos pariatur quos
-                        saepe sit numquam, aperiam officia quaerat rerum facilis.</p>
+                        deserunt accusamus similique</p>
                 </article>
-                <article class="what-i-do_flex__item background__color--primary">
+                <article class="what-i-do_flex__item background__color--primary top_circle">
+                    <img class="top_img" src="podklady/bullseye-solid.svg" alt="" width="75px">
                     <h4>Seo Marketing</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Doloribus est, aut fugiat molestiae, dolor voluptates veniam
-                        deserunt accusamus similique dignissimos pariatur quos
-                        saepe sit numquam, aperiam officia quaerat rerum facilis.</p>
+                        deserunt accusamus similique</p> 
                 </article>
             </div>
         </section>
@@ -108,40 +110,63 @@
     </div>
     <div>
         <section id="experience">
-            <h3 class="section__title">Experience</h3>
-            <article>
-                <h4>Google LLC - Sr.Front-end Engineer</h4>
-                <p>
-                    <time datetime="2021-2">Feb 2021 -</time>
-                    <time datetime="">Present</time>
-                </p>
-                <mark class="mark mark__full-time">Full Time</mark>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
-                    repellat ut eos. Ipsam</p>
-            </article>
-            <article>
-                <h4>Ridian IT - Visual Designer</h4>
-                <p>
-                    <time datetime="2020-3">Mar 2020 -</time>
-                    <time datetime="">Present</time>
-                </p>    
-                <mark class="mark mark__part-time">Part Time</mark>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
-                    repellat ut eos. Ipsam</p>
-            </article>
-            <article>
-                <h4>IB Themes - Animation Artist</h4>
-                <p>
-                    <time datetime="2019-1">Jan 2019 -</time>
-                    <time>Present</time>
-                </p>
-                <mark class="mark mark__full-time">Full Time</mark>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
-                    repellat ut eos. Ipsam</p>   
-            </article>
+            <div class="experience_flex">
+                <h3 class="section__title">Experience</h3>
+                <article class="experience_flex__item inside_experience_flex">
+                    <div class="inside_experience_flex__item--A">
+                        <p>
+                            <time datetime="2021-2">Feb 2021 -</time>
+                            <time datetime="">Present</time>
+                        </p>
+                        <mark class="mark mark__full-time">Full Time</mark>
+                    </div>
+                    <div class="inside_experience_flex__item--B">
+                        <h4>Google LLC - Sr.Front-end Engineer</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
+                            repellat ut eos. Ipsam Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Optio autem dolore deserunt aspernatur exercitationem. Unde null.
+                        </p>
+                    </div>
+                </article>
+                <article class="experience_flex__item inside_experience_flex">
+                    <div class="inside_experience_flex__item--A">
+                        <p>
+                            <time datetime="2020-3">Mar 2020 -</time>
+                            <time datetime="">Present</time>
+                        </p>
+                        <mark class="mark mark__part-time">Part Time</mark>   
+                    </div> 
+                    <div class="inside_experience_flex__item--B">
+                        <h4>Ridian IT - Visual Designer</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
+                            repellat ut eos. Ipsam Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Optio sit amet consectetur ipsa enim omnis autem dolore magna aliqua.
+                        </p>
+                    </div>
+                </article>
+                <article class="experience_flex__item inside_experience_flex">
+                    <div class="inside_experience_flex__item--A">
+                        <p>
+                            <time datetime="2019-1">Jan 2019 -</time>
+                            <time datetime="">Present</time>
+                        </p>
+                        <mark class="mark mark__full-time">Full Time</mark>
+                    </div>
+                    <div class="inside_experience_flex__item--B">
+                        <h4>IB Themes - Animation Artist</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
+                            repellat ut eos. Ipsam Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Optio autem dolore deserunt aspernatur exercitationem. Unde null.
+                        </p>
+                    </div>
+                </article>
+            </div>
         </section>
         <section id="my-portfolio">
             <div>
