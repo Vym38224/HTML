@@ -1,46 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@keyframes morph{
+    0%, 100%{
+        border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    }
+    33%{
+        border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+    }
+    66%{
+        border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+    }
 }
 body{
-    font-family: 'Poppins', sans-serif;
-    height: 100vh;
-    background-color: #151515;
-    display: grid;
-    place-content: center;
+    padding-top: 20%;
 }
+.blob{
+    margin: auto;
+    overflow: hidden;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
 
-.cards{
-    perspective: 500px;
-}
-.card{
-    width: 200px;
-    height: 250px;
-    background: url("https://pbs.twimg.com/media/FCG7IZ2XIAMUrxT.jpg") center no-repeat;
+    background: #8f44fd url("https://static.posters.cz/image/750/plakaty/strazci-galaxie-vol-2-i-am-groot-i40500.jpg");
     background-size: cover;
-    border: 2px solid rgba(255, 255, 255, .25);
-    border-radius: 4px;
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-    transition: transform .5s;
-}
-.card:hover{
-    transform: translateZ(10px) rotateX(20deg) rotateY(30deg);
-}
-.card-title{
-    color: #fff;
-    font-weight: bold;
-    text-shadow: 0 0 10px rgba(0,0,0, .5);
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50px);
-    transition: transform .5s;
-}
-.card:hover .card-title{
-    transform: translateZ(50px);
+    background-position: center;
+    animation: morph 3.7s linear infinite;
 }
