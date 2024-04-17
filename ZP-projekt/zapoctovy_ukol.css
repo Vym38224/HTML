@@ -117,6 +117,16 @@ h1::after{
     grid-area:B;
     align-self: center;
 }
+/* vlnka */
+.border-dark{
+    background-image: url("podklady/border-dark.png");
+    background-repeat: repeat-x;
+    max-width: 1140px;
+    margin: auto;
+    height: 17px;
+    background-size: 12%;
+    margin-top: 4vw;
+}
 
 /* sekce what i do */
 .what_i_do_flex {
@@ -194,6 +204,8 @@ h1::after{
 .inside_experience_flex__item--B{
     flex: 4;
     padding-bottom: 1em;
+    padding-left: 2em;
+    border-left: 1px solid #eeeeee;
 }
 .mark{
     font-weight: 400;
@@ -205,9 +217,7 @@ h1::after{
 .mark__full-time{
     background-color:#ff9301;
 }
-.mark__part-time{
-    background-color:#555555;
-}
+.mark__part-time{background-color:#555555;}
 .date{
     margin-top: 0;
     font-size: 0.6em;
