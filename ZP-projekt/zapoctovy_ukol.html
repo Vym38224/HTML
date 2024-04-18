@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div>
+    <header class="header_flex">
+        <div class="header_flex__item--A">
         <hgroup>
             <div class="hello">Hello, My name is</div>
             <h1>Jane Doe</h1>
@@ -31,168 +31,229 @@
                 <a class="menu__item" href="#contact">Contact</a>
             </ul>
         </nav>
+    </div> 
+    <div class="header_flex__item--B">
+    <img class="big_avatar"src="podklady/avatar.svg" alt="" >  
     </div>
-        <img src="podklady/avatar.svg" alt="" >
     </header>
-    <section id="biography" class="section background__secondary">
-        <div class="grid__biography">
-            <figure><img clas="grif_biography--item-A" src="podklady/avatar.svg"
-            alt="" width="200" height="200">
-            <figcaption><hgroup class="grif_biography--item-B" >
-                        <h2>Jane Doe</h2>
-                        <p class="little_subtitle">Full-Stack Developer</p>
+    <div class="background__color--secondary">
+        <section id="biography">
+            <div class="grid__biography">
+                <figure><img class="grid__biography--item-A" src="podklady/avatar.svg" alt="" width="200" height="200">
+                    <figcaption>
+                        <hgroup>
+                            <h2>Jane Doe</h2>
+                            <p class="little_subtitle">Full-Stack Developer</p>
                         </hgroup> 
-            </figcaption></figure>
-            <div class="grif_biography--item-D" >
-                <h3 class="section_title">Biography</h3>
-                <p>I'm Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco.
-                    code and create web elements for amazing people around the world. I like work with new people.
-                    New people new Experiences.
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id iste dolorem. Vel, eos dolorem rem
-                    omnis sapiente perferendis, nisi exercitationem, aperiam aspernatur quo accusamus quibusdam soluta
-                    libero dicta voluptatibus?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore delectus atque id, ex alias
-                    quas, tenetur voluptatem exercitationem accusamus dicta fugit laboriosam iste! Eaque facilis
-                    quae libero distinctio voluptate corrupti?</p>
+                    </figcaption>
+                </figure>
+                <div class="grid__biography--item-B" >
+                    <h3 class="section__title">Biography</h3>
+                    <p>I'm Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco.
+                        code and create web elements for amazing people around the world. I like work with new people.
+                        New people new Experiences.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id iste dolorem. Vel, eos dolorem rem
+                        omnis sapiente perferendis, nisi exercitationem, aperiam aspernatur quo accusamus quibusdam soluta
+                        libero dicta voluptatibus?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore delectus atque id, ex alias
+                        quas, tenetur voluptatem exercitationem accusamus dicta fugit laboriosam iste! Eaque facilis
+                        quae libero distinctio voluptate corrupti?
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="what-i-do">
-        <h3 class="section_title">What I do?</h3>
-        <div class="flex">
-            <article class="what-i-do_flex__item">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus est, aut fugiat molestiae, dolor voluptates veniam
-                    deserunt accusamus similique dignissimos pariatur quos
-                    saepe sit numquam, aperiam officia quaerat rerum facilis.</p>
-            </article>
-            <article class="what-i-do_flex__item">
-                <h4>Web Development</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus est, aut fugiat molestiae, dolor voluptates veniam
-                    deserunt accusamus similique dignissimos pariatur quos
-                    saepe sit numquam, aperiam officia quaerat rerum facilis.</p>
-            </article>
-            <article class="what-i-do_flex__item">
-                <h4>Seo Marketing</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus est, aut fugiat molestiae, dolor voluptates veniam
-                    deserunt accusamus similique dignissimos pariatur quos
-                    saepe sit numquam, aperiam officia quaerat rerum facilis.</p>
-            </article>
-        </div>
-    </section>
-    <section id="awards">
-        <h3 class="section_title">Awards</h3>
-        <div>
-            <!--<img src="" alt="Creative Designer">-->
-        </div>
-        <div>
-            <!--<img src="" alt="Yearly Best Perfome">-->
-        </div>
-        <div>
-            <!--<img src="" alt="Best Learner Award">-->
-        </div>
-    </section>
-    <section id="experience">
-        <h3 class="section_title">Experience</h3>
-        <article>
-            <h4>Google LLC - Sr.Front-end Engineer</h4>
-            <p>
-                <time datetime="2021-2">Feb 2021 -</time>
-                <time datetime="">Present</time>
-            </p>
-            <mark class="mark mark__full-time">Full Time</mark>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
-                repellat ut eos. Ipsam</p>
-        </article>
-        <article>
-            <h4>Ridian IT - Visual Designer</h4>
-            <p>
-                <time datetime="2020-3">Mar 2020 -</time>
-                <time datetime="">Present</time>
-            </p>    
-            <mark class="mark mark__part-time">Part Time</mark>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
-                repellat ut eos. Ipsam</p>
-        </article>
-        <article>
-            <h4>IB Themes - Animation Artist</h4>
-            <p>
-                <time datetime="2019-1">Jan 2019 -</time>
-                <time>Present</time>
-            </p>
-            <mark class="mark mark__full-time">Full Time</mark>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
-                repellat ut eos. Ipsam</p>   
-        </article>
-    </section>
-    <section id="my-portfolio">
-        <div>
-            <h3 class="section_title">My Portfolio</h3>
-            <div class="wrapper">
-                <article class="item__A">
-                    <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
-                    <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
+            <!--<img src="podklady/border-dark.png" alt=""> nevim -->
+        </section>
+        <div class="border-dark"></div>
+        <section id="what-i-do">
+            <h3 class="section__title">What I do?</h3>
+            <div class="what_i_do_flex">
+                <article class="what-i-do_flex__item background__color--primary top_circle">
+                    <img class="top_img" src="podklady/pencil-alt-solid.svg" alt="" width="75px">
+                    <h4>Web Design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
-                        eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
+                        Doloribus est, aut fugiat molestiae, dolor voluptates veniam
+                        deserunt accusamus similique</p>
                 </article>
-                <article class="item__B">
-                    <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
-                    <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
+                <article class="what-i-do_flex__item background__color--primary top_circle">
+                    <img class="top_img" src="podklady/desktop-solid.svg" alt="" width="75px">
+                    <h4>Web Development</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
-                        eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
+                        Doloribus est, aut fugiat molestiae, dolor voluptates veniam
+                        deserunt accusamus similique</p>
                 </article>
-                <article class="item__C">
-                    <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
-                    <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
+                <article class="what-i-do_flex__item background__color--primary top_circle">
+                    <img class="top_img" src="podklady/bullseye-solid.svg" alt="" width="75px">
+                    <h4>Seo Marketing</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
-                        eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
-                </article>
-                <article class="item__D">
-                    <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
-                    <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
-                        eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
-                </article>
-                <article class="item__E">
-                    <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
-                    <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
-                        eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
-                </article>
-                <article class="item__F">
-                    <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
-                    <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
-                        eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
+                        Doloribus est, aut fugiat molestiae, dolor voluptates veniam
+                        deserunt accusamus similique</p> 
                 </article>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="awards">
+            <h3 class="section__title">Awards</h3>
+            <div class="awards_flex">
+                <div class="awards_flex__item background__color--primary">
+                    <img src="podklady/trophy-solid.svg" alt="" width="50px">
+                    <p>Creative Designer</p>
+                </div>
+                <div class="awards_flex__item background__color--primary">
+                    <img src="podklady/trophy-solid.svg" alt="" width="50px">
+                    <p>Yearly Best Performer</p>
+                </div>
+                <div class="awards_flex__item background__color--primary">
+                    <img src="podklady/trophy-solid.svg" alt="" width="50px">
+                    <p>Best Learner Award</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div>
+        <section id="experience">
+            <div class="experience_flex">
+                <h3 class="section__title">Experience</h3>
+                <article class="experience_flex__item inside_experience_flex">
+                    <div class="inside_experience_flex__item--A">
+                        <p>
+                            <time datetime="2021-02">Feb 2021 -</time>
+                            <time datetime="">Present</time>
+                        </p>
+                        <mark class="mark mark__full-time">Full Time</mark>
+                    </div>
+                    <div class="inside_experience_flex__item--B">
+                        <h4>Google LLC - Sr.Front-end Engineer</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
+                            repellat ut eos. Ipsam Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Optio autem dolore deserunt aspernatur exercitationem. Unde null.
+                        </p>
+                    </div>
+                </article>
+                <article class="experience_flex__item inside_experience_flex">
+                    <div class="inside_experience_flex__item--A">
+                        <p>
+                            <time datetime="2020-03">Mar 2020 -</time>
+                            <time datetime="">Present</time>
+                        </p>
+                        <mark class="mark mark__part-time">Part Time</mark>   
+                    </div> 
+                    <div class="inside_experience_flex__item--B">
+                        <h4>Ridian IT - Visual Designer</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
+                            repellat ut eos. Ipsam Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Optio sit amet consectetur ipsa enim omnis autem dolore magna aliqua.
+                        </p>
+                    </div>
+                </article>
+                <article class="experience_flex__item inside_experience_flex">
+                    <div class="inside_experience_flex__item--A">
+                        <p>
+                            <time datetime="2019-01">Jan 2019 -</time>
+                            <time datetime="">Present</time>
+                        </p>
+                        <mark class="mark mark__full-time">Full Time</mark>
+                    </div>
+                    <div class="inside_experience_flex__item--B">
+                        <h4>IB Themes - Animation Artist</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorem, sunt ducimus facere ipsa enim omnis deserunt tenetur
+                            repellat ut eos. Ipsam Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Optio autem dolore deserunt aspernatur exercitationem. Unde null.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="my-portfolio">
+            <div>
+                <h3 class="section__title">My Portfolio</h3>
+                <div class="my_portfolio_grid">
+                    <article class="my_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                        <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
+                            eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
+                    </article>
+                    <article class="my_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                        <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
+                            eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
+                    </article>
+                    <article class="mmy_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                        <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
+                            eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
+                    </article>
+                    <article class="my_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                        <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
+                            eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
+                    </article>
+                    <article class="mmy_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                        <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
+                            eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
+                    </article>
+                    <article class="my_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                        <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
+                            eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="background__color--secondary">
     <section id="contact">
-        <h3 class="section_title">Contact</h3>
-        <h4>What's your story? Get in touch</h4>
-        <p>Always avaiable for freelancing if the right project comes along, Feel free to contact me.</p>
-        <!--<img src="" alt="">-->
-        <a href="">Champ de Mars, 5 Av. Anatole France, 75007 Paris,Francie</a>
-        <!--<img src="" alt="">-->
-        <p><a href="">support@domain.com</a></p>
-        <!--<img src="" alt="">-->
-        <a href="">555-2368</a>
-        <!--Dodělat Say Something a mapu přímo z map(vložení mapy)-->
+        <h3 class="section__title">Contact</h3>
+        <div class="flex-contact">
+            <div class="flex-contact__item flex-contact__item--left">
+                <h4>What's your story? Get in touch</h4>
+                <p>Always avaiable for freelancing if the right project comes along, Feel free to contact me.</p>
+                <address class="flex-contact flex-contact__touch">
+                    <div class="flex-contact__touch--item flex-contact__touch--item-marker"><img src="podklady/map-marker-alt-solid.svg" alt="" width="20"><a class="flex-contact__touch--right" href="">Champ de Mars, 5 Av. Anatole France, 75007 Paris, Francie</a></div>
+                    <div class="flex-contact__touch--item"><img src="podklady/envelope-regular.svg" alt="" width="25"><a class="flex-contact__touch--right flex-contact__touch--sup" href="">support@domain.com</a></div>
+                    <div class="flex-contact__touch--item flex-contact__touch--item-mobile"><img src="podklady/mobile-alt-solid.svg" alt="" width="15"><a class="flex-contact__touch--right" href="">555-2368</a></div>
+                </address>
+            </div>
+            <div class="flex-contact__item">
+                <h4>Say Something</h4>
+                <form>
+                    <div class="flex-form">
+                        <input type="text" placeholder="Full name" required>
+                        <input type="email" placeholder="Email address" required>
+                    </div>
+                    <div class="flex-form">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="flex-form">
+                        <textarea placeholder="Type comment" required></textarea>
+                    </div>
+                    <button type="button">Send Message</button>
+                </form>
+            </div>  
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.346155944504!2d2.294481615674355!3d48.85826059233491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f39f3e49b6b%3A0x30bbf2c2934ad4c3!2sEiffel%20Tower!5e0!3m2!1sen!2suk!4v1618223435267!5m2!1sen!2suk"></iframe>
+        </div>              
     </section>
+    </div>
     <footer> 
         <p><small>© Lorem ipsum dolor sit amet 2022</small></p>
     </footer>

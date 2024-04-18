@@ -1,38 +1,51 @@
-body {
-    max-width: 1140px;
-    margin: auto; 
-    margin-top: 4vw;
-    padding: 1em; 
+/* zakladni nastaveni */
+body { 
+    margin: 0;
+    margin-top: 4vw; 
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
+    
 }
-
-header{
-    display:flex;
-
+.background__color--primary{background-color: white;}
+.background__color--secondary{
+    background-color: #f7f7ff;
 }
-
-
+section, header, footer {
+    max-width: 1140px;
+    margin: auto; 
+}
 section{
     padding-top: 4vw;
-    padding-bottom: 4vw;
 }
 h1{
     font-size: 6em;
     font-weight: 900;
     margin: 0em;
 }
-.hello{
-    margin-bottom: -2em;
+h2{
+    font-weight: 900;
+    color:#0b0b15;
+    font-size: 1.75em;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    padding-left: 1em;
 }
-
-.section_title{
+h3 h4{
+    font-weight: 900;
+    color:#0b0b15;
+}
+p{
+    font-weight: 400;
+    color: #555555;
+    margin-bottom:0em;
+}
+.hello{margin-bottom: -1em;}
+.section__title{
     width: fit-content;
     z-index: 1;
     position: relative;
 }
-
-.section_title::after{
+.section__title::after{
     content:" ";
     display: inline-block;
     position: absolute;
@@ -45,25 +58,27 @@ h1{
     left: -0.5rem;
     z-index: -1;
 }
-
 .subtitle{
     font-weight: 900;
     font-size: 2em;
     color:#ff9301;
     margin-top: -1em;
 }
-
 .little_subtitle{
     margin-top: 0em;
     color:#ff9301;
-    padding-left: 2.5em;
+    padding-left: 1.8em;
     font-size: 0.9em;
     font-weight: 400;
 }
-
+/* header */
+.header_flex{
+    display: flex;
+    position: relative;
+}
+.header_flex__item--A, .header_flex__item--B{flex:50%;}
 .menu{
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 4.2em;
     padding-left: 0px;
 }
 .menu__item{
@@ -71,42 +86,127 @@ h1{
     text-decoration: none;
     color: #555555;
 }
-.menu__item:hover{
-    border-bottom: 3px solid #ff9301;
+.menu__item:hover{border-bottom: 3px solid #ff9301;}
+h1::after{
+    content:" ";
+    display: inline-block;
+    position: absolute;
+    background-color: #ff9301;
+    opacity: 50%;
+    border-radius: 50%;
+    width: 60rem;
+    height: 60rem;
+    top: -27rem;
+    left: 36rem;
+    z-index: -1;
 }
-h2{
-    font-weight: 900;
-    color:#0b0b15;
-    font-size: 2em;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    padding-left: 1em;
+.big_avatar{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/* sekce biography */
+.grid__biography{
+    display: grid;
+    grid-template-columns: 1fr 2.7fr ;
+    grid-template-areas: 
+            "A B";
+}
+.grid__biography--item-A {grid-area: A;}
+.grid__biography--item-B{
+    grid-area:B;
+    align-self: center;
+}
+/* vlnka */
+.border-dark{
+    background-image: url("podklady/border-dark.png");
+    background-repeat: repeat-x;
+    max-width: 1140px;
+    margin: auto;
+    height: 17px;
+    background-size: 12%;
+    margin-top: 4vw;
 }
 
-.flex {
+/* sekce what i do */
+.what_i_do_flex {
     display: flex;
-    align-items: center;
+    position: relative;
 }
 .what-i-do_flex__item{
     border: 1px;
     text-align: left;
+    padding: 1em;
+    border-radius: 0.9em;
+    margin-right: 1em;
+    flex:1;
+    position: relative;
+    overflow: hidden;
 }
-h4{
-    font-weight: 900;
-    color:#0b0b15;
+.what-i-do_flex__item:last-child{ margin-right: 0em;}
+.top_circle{
+    position: relative;
+    z-index: 1;
 }
-h3{
-    font-weight: 900;
-    color:#0b0b15;
+.top_img{
+    padding-bottom: 2.5em;
+    z-index: 1;
 }
+.top_circle::after{
+    content:" ";
+    display: inline-block;
+    position: absolute;
+    background-color: #ff9301;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    top: -3rem;
+    left: -1.5rem;
+    z-index: -1;
+}
+/* sekce awards */
+.awards_flex{
+    display: flex;
+    padding-bottom: 2em;
+}
+.awards_flex__item{
+    border: 1px;
+    text-align: center;
+    padding: 2em;
+    margin: auto;
+    border-radius: 0.9em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    flex: 1;
+}
+.awards_flex__item:last-child{margin-right: 0em;}
 
-p{
-    font-weight: 400;
-    color: #555555;
-    font-size: 0.9em;
-    margin-bottom:0em;
+/* sekce experience */
+.experience_flex{
+    display:flex;
+    flex-direction: column;
 }
-
+.experience_flex__item{
+    border: 1px;
+    background-color: #f7f7ff;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 0.9em;
+    margin-bottom: 1em;
+}
+.experience_flex__item:last-child{margin-bottom: 0em;}
+.inside_experience_flex{display:flex;}
+.inside_experience_flex__item--A{
+    flex: 1.5;
+    padding-top: 2em;
+}
+.inside_experience_flex__item--B{
+    flex: 4;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    border-left: 1px solid #eeeeee;
+}
 .mark{
     font-weight: 400;
     font-size: 0.9em;
@@ -117,74 +217,118 @@ p{
 .mark__full-time{
     background-color:#ff9301;
 }
-.mark__part-time{
-    background-color:#555555;
-}
-
+.mark__part-time{background-color:#555555;}
 .date{
     margin-top: 0;
     font-size: 0.6em;
 }
-.background__secondary{
-    background-color: #f7f7ff;
-}
 
-@media (max-width:959px){
-    .flex {
-        flex-direction: column;
-    }
-}
-.wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-}
-
-.grif_biography--item-A{
-    grid-area:A;
-    padding-left: 1em;
-}
-.grif_biography--item-B{
-    grid-area:B;
-}
-.grif_biography--item-C{grid-area:C;}
-.grif_biography--item-D{
-    grid-area:D;
-    align-self: center;
-}
-
-.grid__biography{
+/* sekce my portfolio */
+#my-portfolio{margin-bottom: 2em;}
+.my_portfolio_grid{
     display: grid;
-    grid-template-columns: 1fr 2.7fr ;
-    grid-template-areas: 
-            "A D"
-            "B D";
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill,  minmax(300px, 1fr));
 }
-
-.item__A img,
-.item__B img,
-.item__C img,
-.item__D img,
-.item__E img,
-.item__F img {
-    display: block;
-    margin: 0 auto; 
+.my_portfolio_grid__item{
+    color: #555555;
+    font-weight: 400;
+}
+.my_portfolio__img {
     max-width: 100%; 
 }
+h4{font-weight: 900;
+    color: #0b0b15;}
 
+/* sekce contact */
+address{font-style: normal;}
 
-.item__A,
-.item__B,
-.item__C,
-.item__D,
-.item__E,
-.item__F {
-    flex: 1 1 300px; 
-    max-width: 280px; 
+.flex-contact{display:flex;}
+.flex-contact__item{
+    flex: 0 0 50%; 
+    box-sizing: border-box;
+}
+.flex-contact__item--left{padding-top: 2.5vw;}
+.flex-contact__touch{flex-direction: column;}
+.flex-contact__touch--item{padding-top: 0.6em;}
+.flex-contact__touch--item-marker{padding-left: 3px;}
+.flex-contact__touch--item-mobile{padding-left: 5px;}
+.flex-contact__touch--sup{margin-left:-4px}
+.flex-contact__touch--right{
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+    padding-left: 1em;
+}
+.flex-contact__touch--item img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.1em; 
+}
+.flex-form {
+    display: flex;
+    flex-direction: column 1fr 1fr ;
+    margin-right: -1em;
+}
+.flex-form input,
+.flex-form textarea {
+    width: 100%;
+    border: 1px solid #bbbbbb;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+textarea{
+    height: 5em;
+}
+.flex-form button {
+    align-self: flex-start; 
+}
+button{
+    padding: 0.7em;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.map {
+    margin-top: 3.5vw;
+    position: relative;
+    height: 15em; 
+}
+.map iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
+@media (max-width:1199px){
+    section, header, footer {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+    h1::after{
+        width: 50rem;
+        height: 50rem;
+        top: -22rem;
+        left: 32rem;
+    }
+}
+@media (max-width:959px){
+    .what_i_do_flex {flex-direction: column;}
+    .what-i-do_flex__item{margin-bottom: 1em;}
+    .flex-contact {
+      flex-direction: column;
+      padding-bottom: 2vw;
+    }  
+    .map {margin-top: 0.3em;}
+    .flex-contact__item--left{padding-top: 0em;}
+    .big_avatar, h1::after, .header_flex__item--B{display: none;} 
+  }
+@media (max-width: 559px) {
+    .flex-form {
+        flex-direction: column; 
+        margin-right: 1.5em;
+    }
 }
 
-
-/* na githubu kod jak udelat kolecko v nadpisu sekce (seminar8) 
-pozadi barvy rozdeit do 3 divu a obarvit, obarvit celou sekci těma barvama
-halvicka je flex a nav je flex ve flexu */
