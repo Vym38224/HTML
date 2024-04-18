@@ -55,25 +55,19 @@ address{font-style: normal;}
     vertical-align: middle;
     margin-right: 0.1em; 
 }
-.flex-form {
-    display: flex;
-    flex-direction: column 1fr 1fr ;
-    margin-right: -1em;
+.form {
+    display: block;
+    margin-right: 2em;
 }
-.flex-form input,
-.flex-form textarea {
+.form input,
+.form textarea {
     width: 100%;
     border: 1px solid #bbbbbb;
     padding: 1em;
     margin-bottom: 1em;
-    margin-right: 1em;
 }
-textarea{
-    height: 5em;
-}
-.flex-form button {
-    align-self: flex-start; 
-}
+textarea{height: 5em;}
+.form button {align-self: flex-start; }
 button{
     padding: 0.7em;
     background-color: black;
@@ -101,10 +95,3 @@ button{
     .flex-contact__item--left{padding-top: 0em;}
     
   }
-@media (max-width: 560px) {
-    .flex-form {
-        flex-direction: column; 
-        margin-right: 1.5em;
-    }
-}
-  
