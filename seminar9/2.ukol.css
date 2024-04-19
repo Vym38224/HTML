@@ -32,7 +32,6 @@ p{
     color: #555555;
     margin-bottom:0em;}
 address{font-style: normal;}
-
 .flex-contact{display:flex;}
 .flex-contact__item{
     flex: 0 0 50%; 
