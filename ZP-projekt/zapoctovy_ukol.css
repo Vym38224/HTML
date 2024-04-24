@@ -34,7 +34,7 @@ h3 h4{
     font-weight: 900;
     color:#0b0b15;
 }
-p{
+p, span{
     font-weight: 400;
     color: #555555;
     margin-bottom:0em;
@@ -78,7 +78,8 @@ p{
 }
 .header_flex__item--A, .header_flex__item--B{flex:50%;}
 .menu{
-    margin-top: 4.2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
     padding-left: 0px;
 }
 .menu__item{
@@ -117,6 +118,27 @@ h1::after{
     grid-area:B;
     align-self: center;
 }
+figure{
+    position: relative;
+    z-index: 1;
+}
+figure::after{
+    background-image: url("podklady/avatar.svg");
+    background-size: 208px;
+    content:" ";
+    display: inline-block;
+    position: absolute;
+    background-color: #ff9301;
+    border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
+    z-index: -1;
+}
+figcaption{
+    margin-top:14em;
+    margin-left:3.5em;
+}
+
 /* vlnka */
 .border-dark{
     background-image: url("podklady/border-dark.png");
@@ -170,6 +192,7 @@ h1::after{
     padding-bottom: 2em;
 }
 .awards_flex__item{
+    flex-direction:column;
     border: 1px;
     text-align: center;
     padding: 2em;
@@ -242,7 +265,6 @@ h4{font-weight: 900;
 
 /* sekce contact */
 address{font-style: normal;}
-
 .flex-contact{display:flex;}
 .flex-contact__item{
     flex: 0 0 50%; 
@@ -262,27 +284,18 @@ address{font-style: normal;}
 }
 .flex-contact__touch--item img {
     display: inline-block;
-    vertical-align: middle;
-    margin-right: 0.1em; 
+    vertical-align: middle; 
 }
-.flex-form {
-    display: flex;
-    flex-direction: column 1fr 1fr ;
-    margin-right: -1em;
-}
-.flex-form input,
-.flex-form textarea {
+form input,
+form textarea {
     width: 100%;
     border: 1px solid #bbbbbb;
     padding: 1em;
     margin-bottom: 1em;
-    margin-right: 1em;
 }
 textarea{
     height: 5em;
-}
-.flex-form button {
-    align-self: flex-start; 
+    font-family: "Roboto", sans-serif;
 }
 button{
     padding: 0.7em;
@@ -291,6 +304,17 @@ button{
     font-weight: bold;
     border-radius: 5px;
 }
+.upper_form {
+    display: flex;
+    align-items: flex-start; 
+}
+.upper_form input,
+.upper_form textarea {
+    flex: 1; 
+    margin-right: 1em; 
+}
+.upper_form input:last-child {margin-right: 0; }
+.back {margin-right: 1.8em;}
 .map {
     margin-top: 3.5vw;
     position: relative;
@@ -299,9 +323,10 @@ button{
 .map iframe {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 98%;
     filter: grayscale(100%);
 }
+
 @media (max-width:1199px){
     section, header, footer {
         margin-left: 4vw;
@@ -314,21 +339,21 @@ button{
         left: 32rem;
     }
 }
-@media (max-width:959px){
+@media (max-width:960px){
     .what_i_do_flex {flex-direction: column;}
     .what-i-do_flex__item{margin-bottom: 1em;}
     .flex-contact {
-      flex-direction: column;
-      padding-bottom: 2vw;
+        flex-direction: column;
+        padding-bottom: 2vw;
     }  
-    .map {margin-top: 0.3em;}
-    .flex-contact__item--left{padding-top: 0em;}
+    .map {margin-top: 1vw;}
+    .flex-contact__item--left{padding-top: 0em;} 
     .big_avatar, h1::after, .header_flex__item--B{display: none;} 
   }
-@media (max-width: 559px) {
-    .flex-form {
-        flex-direction: column; 
-        margin-right: 1.5em;
+@media (max-width: 560px) {
+    .upper_form{
+        display: block;
+        margin-right: 1.8em;
     }
 }
 

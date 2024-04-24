@@ -39,15 +39,16 @@
     <div class="background__color--secondary">
         <section id="biography">
             <div class="grid__biography">
-                <figure><img class="grid__biography--item-A" src="podklady/avatar.svg" alt="" width="200" height="200">
+                <div class="grid__biography--item-A">
+                    <figure></figure>
                     <figcaption>
                         <hgroup>
                             <h2>Jane Doe</h2>
                             <p class="little_subtitle">Full-Stack Developer</p>
                         </hgroup> 
                     </figcaption>
-                </figure>
-                <div class="grid__biography--item-B" >
+                </div>
+                <div class="grid__biography--item-B">
                     <h3 class="section__title">Biography</h3>
                     <p>I'm Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco.
                         code and create web elements for amazing people around the world. I like work with new people.
@@ -62,7 +63,6 @@
                     </p>
                 </div>
             </div>
-            <!--<img src="podklady/border-dark.png" alt=""> nevim -->
         </section>
         <div class="border-dark"></div>
         <section id="what-i-do">
@@ -100,7 +100,7 @@
                 </div>
                 <div class="awards_flex__item background__color--primary">
                     <img src="podklady/trophy-solid.svg" alt="" width="50px">
-                    <p>Yearly Best Performer</p>
+                    <p>Yearly Best Performer</pú>
                 </div>
                 <div class="awards_flex__item background__color--primary">
                     <img src="podklady/trophy-solid.svg" alt="" width="50px">
@@ -119,7 +119,7 @@
                             <time datetime="2021-02">Feb 2021 -</time>
                             <time datetime="">Present</time>
                         </p>
-                        <mark class="mark mark__full-time">Full Time</mark>
+                        <span class="mark mark__full-time">Full Time</span>
                     </div>
                     <div class="inside_experience_flex__item--B">
                         <h4>Google LLC - Sr.Front-end Engineer</h4>
@@ -137,7 +137,7 @@
                             <time datetime="2020-03">Mar 2020 -</time>
                             <time datetime="">Present</time>
                         </p>
-                        <mark class="mark mark__part-time">Part Time</mark>   
+                        <span class="mark mark__part-time">Part Time</span>   
                     </div> 
                     <div class="inside_experience_flex__item--B">
                         <h4>Ridian IT - Visual Designer</h4>
@@ -155,7 +155,7 @@
                             <time datetime="2019-01">Jan 2019 -</time>
                             <time datetime="">Present</time>
                         </p>
-                        <mark class="mark mark__full-time">Full Time</mark>
+                        <span class="mark mark__full-time">Full Time</span>
                     </div>
                     <div class="inside_experience_flex__item--B">
                         <h4>IB Themes - Animation Artist</h4>
@@ -220,42 +220,41 @@
         </section>
     </div>
     <div class="background__color--secondary">
-    <section id="contact">
-        <h3 class="section__title">Contact</h3>
-        <div class="flex-contact">
-            <div class="flex-contact__item flex-contact__item--left">
-                <h4>What's your story? Get in touch</h4>
-                <p>Always avaiable for freelancing if the right project comes along, Feel free to contact me.</p>
-                <address class="flex-contact flex-contact__touch">
-                    <div class="flex-contact__touch--item flex-contact__touch--item-marker"><img src="podklady/map-marker-alt-solid.svg" alt="" width="20"><a class="flex-contact__touch--right" href="">Champ de Mars, 5 Av. Anatole France, 75007 Paris, Francie</a></div>
-                    <div class="flex-contact__touch--item"><img src="podklady/envelope-regular.svg" alt="" width="25"><a class="flex-contact__touch--right flex-contact__touch--sup" href="">support@domain.com</a></div>
-                    <div class="flex-contact__touch--item flex-contact__touch--item-mobile"><img src="podklady/mobile-alt-solid.svg" alt="" width="15"><a class="flex-contact__touch--right" href="">555-2368</a></div>
-                </address>
+        <section id="contact">
+            <h3 class="section__title">Contact</h3>
+            <div class="flex-contact">
+                <div class="flex-contact__item flex-contact__item--left">
+                    <h4>What's your story? Get in touch</h4>
+                    <p>Always avaiable for freelancing if the right project comes along, Feel free to contact me.</p>
+                    <address class="flex-contact flex-contact__touch">
+                        <div class="flex-contact__touch--item flex-contact__touch--item-marker"><img src="podklady/map-marker-alt-solid.svg" alt="" width="20"><a class="flex-contact__touch--right" href="">Champ de Mars, 5 Av. Anatole France, 75007 Paris, Francie</a></div>
+                        <div class="flex-contact__touch--item"><img src="podklady/envelope-regular.svg" alt="" width="25"><a class="flex-contact__touch--right flex-contact__touch--sup" href="">support@domain.com</a></div>
+                        <div class="flex-contact__touch--item flex-contact__touch--item-mobile"><img src="podklady/mobile-alt-solid.svg" alt="" width="15"><a class="flex-contact__touch--right" href="">555-2368</a></div>
+                    </address>
+                </div>
+                <div class="flex-contact__item">
+                    <h4>Say Something</h4>
+                    <form>  
+                        <div class="upper_form">
+                            <input type="text" placeholder="Full name" required>
+                            <input type="email" placeholder="Email address" required>
+                        </div>   
+                        <div class="back">           
+                            <input type="text" placeholder="Subject" required>
+                            <textarea placeholder="Type comment" required></textarea>                                       
+                            <button>Send Message</button>
+                        </div> 
+                    </form>         
+                </div>  
             </div>
-            <div class="flex-contact__item">
-                <h4>Say Something</h4>
-                <form>
-                    <div class="flex-form">
-                        <input type="text" placeholder="Full name" required>
-                        <input type="email" placeholder="Email address" required>
-                    </div>
-                    <div class="flex-form">
-                        <input type="text" placeholder="Subject" required>
-                    </div>
-                    <div class="flex-form">
-                        <textarea placeholder="Type comment" required></textarea>
-                    </div>
-                    <button type="button">Send Message</button>
-                </form>
-            </div>  
-        </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.346155944504!2d2.294481615674355!3d48.85826059233491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f39f3e49b6b%3A0x30bbf2c2934ad4c3!2sEiffel%20Tower!5e0!3m2!1sen!2suk!4v1618223435267!5m2!1sen!2suk"></iframe>
-        </div>              
-    </section>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.346155944504!2d2.294481615674355!3d48.85826059233491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f39f3e49b6b%3A0x30bbf2c2934ad4c3!2sEiffel%20Tower!5e0!3m2!1sen!2suk!4v1618223435267!5m2!1sen!2suk"></iframe>
+            </div>              
+        </section>
     </div>
     <footer> 
         <p><small>© Lorem ipsum dolor sit amet 2022</small></p>
     </footer>
+    <!--na githubu kod na button scrollUp -->
 </body>
 </html>
