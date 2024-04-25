@@ -4,7 +4,9 @@ body {
     margin-top: 4vw; 
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
-    
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
 }
 .background__color--primary{background-color: white;}
 .background__color--secondary{
@@ -88,7 +90,7 @@ p, span{
     color: #555555;
 }
 .menu__item:hover{border-bottom: 3px solid #ff9301;}
-h1::after{
+body::after{
     content:" ";
     display: inline-block;
     position: absolute;
@@ -98,8 +100,8 @@ h1::after{
     width: 60rem;
     height: 60rem;
     top: -27rem;
-    left: 36rem;
     z-index: -1;
+    left: 50%;
 }
 .big_avatar{
     position: absolute;
@@ -339,6 +341,10 @@ button{
         left: 32rem;
     }
 }
+@media (max-width: 1100px) and (min-width:960px){
+    .header_flex__item--A{flex:60%;}
+    .header_flex__item--B{flex:40%;}
+}
 @media (max-width:960px){
     .what_i_do_flex {flex-direction: column;}
     .what-i-do_flex__item{margin-bottom: 1em;}
@@ -348,12 +354,42 @@ button{
     }  
     .map {margin-top: 1vw;}
     .flex-contact__item--left{padding-top: 0em;} 
-    .big_avatar, h1::after, .header_flex__item--B{display: none;} 
+    .big_avatar,body::after,.header_flex__item--B{display: none;} 
+    .header_flex__item--A p {padding-right:60%;}
+    .grid__biography{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                "A"
+                "B";
+    }
+    .grid__biography--item-A, .grid__biography--item-A{margin:0 auto;}
   }
 @media (max-width: 560px) {
     .upper_form{
         display: block;
         margin-right: 1.8em;
     }
+    .header_flex__item--A p {padding-right:0%;}
+    .menu{
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        }
+    .menu__item{
+        display: block;
+        width: 8em;
+        margin: 0.5em auto; 
+        margin-left:0.5em;
+        margin-right: 0.5em;
+        height: 32px;
+        text-align: center;
+        border-radius:5px;
+        background-color: #ff9301;
+        color: #0b0b15;
+    }
+    .menu__item:hover{border:none;}
 }
 
