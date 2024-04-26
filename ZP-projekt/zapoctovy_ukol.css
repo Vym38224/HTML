@@ -1,53 +1,41 @@
 /* zakladni nastaveni */
 body { 
-    margin: 0;
+    margin: 0em;
     margin-top: 4vw; 
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
     position: relative;
     overflow: hidden;
-    overflow-y: auto;
-}
+    overflow-y: auto;}
 .background__color--primary{background-color: white;}
-.background__color--secondary{
-    background-color: #f7f7ff;
-}
+.background__color--secondary{background-color: #f7f7ff;}
 section, header, footer {
     max-width: 1140px;
-    margin: auto; 
-}
-section{
-    padding-top: 4vw;
-}
+    margin: auto;}
+section{padding-top: 4vw;}
 h1{
     font-size: 6em;
     font-weight: 900;
-    margin: 0em;
-}
+    margin: 0em;}
 h2{
     font-weight: 900;
     color:#0b0b15;
     font-size: 1.75em;
     margin-top: 0.5em;
     margin-bottom: 0em;
-    padding-left: 1em;
-}
+    padding-left: 1em;}
 h3 h4{
     font-weight: 900;
-    color:#0b0b15;
-}
+    color:#0b0b15;}
 p, span, small{
     font-weight: 400;
     color: #555555;
-    margin-bottom:0em;
-}
-.hello{
-    margin-bottom: -1em;}
+    margin-bottom:0em;}
+.hello{margin-bottom: -1em;}
 .section__title{
     width: fit-content;
     z-index: 1;
-    position: relative;
-}
+    position: relative;}
 .section__title::after{
     content:" ";
     display: inline-block;
@@ -59,37 +47,31 @@ p, span, small{
     height: 1.8rem;
     top: -0.3rem;
     left: -0.5rem;
-    z-index: -1;
-}
+    z-index: -1;}
 .subtitle{
     font-weight: 900;
     font-size: 2em;
     color:#ff9301;
-    margin-top: -1em;
-}
+    margin-top: -1em;}
 .little_subtitle{
     margin-top: 0em;
     color:#ff9301;
     padding-left: 1.8em;
     font-size: 0.9em;
-    font-weight: 400;
-}
+    font-weight: 400;}
 /* header */
 .header_flex{
     display: flex;
-    position: relative;
-}
+    position: relative;}
 .header_flex__item--A, .header_flex__item--B{flex:50%;}
 .menu{
     margin-top: 3em;
     margin-bottom: 3em;
-    padding-left: 0px;
-}
+    padding-left: 0px;}
 .menu__item{
     padding: 0.3em;
     text-decoration: none;
-    color: #555555;
-}
+    color: #555555;}
 .menu__item:hover{border-bottom: 3px solid #ff9301;}
 body::after{
     content:" ";
@@ -102,17 +84,15 @@ body::after{
     height: 65rem;
     top: -30rem;
     z-index: -1;
-    left: 51%;
-}
+    left: 51%;}
 .big_avatar{
     position: absolute;
     right: 0;
-    bottom: 0;
-}
+    bottom: 0;}
 /* sekce biography */
 .grid__biography{
     display: grid;
-    grid-template-columns: 1fr 2.7fr ;
+    grid-template-columns: 1fr 2.5fr ;
     grid-template-areas: 
             "A B";
 }
@@ -135,13 +115,10 @@ figure::after{
     border-radius: 50%;
     width: 13rem;
     height: 13rem;
-    z-index: -1;
-}
+    z-index: -1;}
 figcaption{
     margin-top:15em;
-    margin-left:3.5em;
-}
-
+    margin-left:3.5em;}
 /* vlnka */
 .border-dark{
     background-image: url("podklady/border-dark.png");
@@ -150,14 +127,9 @@ figcaption{
     margin: auto;
     height: 17px;
     background-size: 12%;
-    margin-top: 4vw;
-}
-
+    margin-top: 4vw;}
 /* sekce what i do */
-.what_i_do_flex {
-    display: flex;
-    position: relative;
-}
+.what_i_do_flex {display: flex;}
 .what-i-do_flex__item{
     border: 1px;
     text-align: left;
@@ -165,18 +137,14 @@ figcaption{
     border-radius: 0.9em;
     margin-right: 1em;
     flex:1;
-    position: relative;
-    overflow: hidden;
-}
+    overflow: hidden;}
 .what-i-do_flex__item:last-child{ margin-right: 0em;}
 .top_circle{
     position: relative;
-    z-index: 1;
-}
+    z-index: 1;}
 .top_img{
     padding-bottom: 2.5em;
-    z-index: 1;
-}
+    z-index: 1;}
 .top_circle::after{
     content:" ";
     display: inline-block;
@@ -187,8 +155,7 @@ figcaption{
     height: 10rem;
     top: -3rem;
     left: -1.5rem;
-    z-index: -1;
-}
+    z-index: -1;}
 /* sekce awards */
 .awards_flex{
     display: flex;
@@ -267,6 +234,7 @@ h4{font-weight: 900;
     color: #0b0b15;}
 
 /* sekce contact */
+#contact{padding-bottom:1em;}
 address{font-style: normal;}
 .flex-contact{display:flex;}
 .flex-contact__item{
@@ -393,8 +361,7 @@ footer div {
                 "A"
                 "B";
     }
-    .grid__biography--item-A{
-                            margin:0 auto;
+    .grid__biography--item-A{margin:0 auto;
                             margin-bottom:2em;}
     figcaption{margin-left:0em;}
     figure{left:-3em;}
@@ -430,6 +397,13 @@ footer div {
     }
     .menu__item:hover{border:none;}
     .border-dark{background-size: 30%;}
+    .inside_experience_flex{flex-direction: column;
+                            padding:1em}                   
+    .inside_experience_flex__item--A{padding:0em;
+                                    padding-bottom:1em;}
+    .inside_experience_flex__item--A p{margin:0em}
+    .inside_experience_flex__item--B{padding:0em;
+                                    border-left:none;}
     .awards_flex{
         flex-direction: column;
         padding-bottom:0.5em;}
