@@ -41,7 +41,8 @@ p, span{
     color: #555555;
     margin-bottom:0em;
 }
-.hello{margin-bottom: -1em;}
+.hello{
+    margin-bottom: -1em;}
 .section__title{
     width: fit-content;
     z-index: 1;
@@ -340,6 +341,9 @@ button{
         top: -22rem;
         left: 32rem;
     }
+    .border-dark{
+        margin-top:4vw;
+        margin-bottom:4vw;}
 }
 @media (max-width: 1100px) and (min-width:960px){
     .header_flex__item--A{flex:60%;}
@@ -363,7 +367,14 @@ button{
                 "A"
                 "B";
     }
-    .grid__biography--item-A, .grid__biography--item-A{margin:0 auto;}
+    .grid__biography--item-A{
+                            margin:0 auto;
+                            margin-bottom:2em;}
+    figcaption{margin-left:0em;}
+    figure{left:-3em;}
+    .border-dark{
+        background-size: 21%;
+    }
   }
 @media (max-width: 560px) {
     .upper_form{
@@ -372,24 +383,28 @@ button{
     }
     .header_flex__item--A p {padding-right:0%;}
     .menu{
-        display: flex;
-        flex-wrap: wrap ;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         margin-top: 1em;
-        margin-bottom: 1em;
-        }
+        margin-bottom: 1em;}
+        
     .menu__item{
-        display: block;
-        width: 8em;
-        margin: 0.5em auto; 
+        padding: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin-bottom:1em;
         margin-left:0.5em;
-        margin-right: 0.5em;
-        height: 32px;
+        width: 7em;
+        height: 1.5em;
         text-align: center;
         border-radius:5px;
         background-color: #ff9301;
         color: #0b0b15;
     }
     .menu__item:hover{border:none;}
+
+    .border-dark{
+        background-size: 30%;
+    }
 }
 
