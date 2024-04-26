@@ -36,7 +36,7 @@ h3 h4{
     font-weight: 900;
     color:#0b0b15;
 }
-p, span{
+p, span, small{
     font-weight: 400;
     color: #555555;
     margin-bottom:0em;
@@ -329,7 +329,22 @@ button{
     height: 98%;
     filter: grayscale(100%);
 }
-
+/* footer */
+footer {
+    display: flex;
+    margin: 0 auto;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
+.tf{
+    display:flex;
+    gap:0.5em;
+    justify-content: flex-start; }
+footer div {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end; 
+    margin:auto;}
 @media (max-width:1200px){
     section, header, footer {
         margin-left: 4vw;
@@ -428,8 +443,14 @@ button{
         gap:1em;
         flex-grow: 2;
         text-align: start;}
-        .awards_flex__item:first-child {padding-top: 1em;}
-        .awards_flex__item:last-child {padding-top: 1em;}
-        .awards_flex__item p {margin-top: 0.75em;}
+    .awards_flex__item:first-child {padding-top: 1em;}
+    .awards_flex__item:last-child {padding-top: 1em;}
+    .awards_flex__item p {margin-top: 0.75em;}
+    footer{
+        flex-direction:column;
+        gap:0.5em;
+        margin:1em;
+    }
+
 }
 
