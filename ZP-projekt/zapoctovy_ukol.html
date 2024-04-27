@@ -13,41 +13,38 @@
     <header class="header_flex">
         <div class="header_flex__item--A">
         <hgroup>
-            <div class="hello">Hello, My name is</div>
+            <p class="hello">Hello, My name is</p>
             <h1>Jane Doe</h1>
-            <div class="subtitle">Full-Stack Developer</div>
+            <p class="subtitle">Full-Stack Developer</p>
         </hgroup>
         <p>
         I design and develop services for customers of all sizes, specializing in
         creating stylish, modern websites, web services and online stores
         </p>
-        <nav>
-            <ul class="menu">
-                <a class="menu__item" href="#biography">Biography</a>
-                <a class="menu__item" href="#what-i-do">What I do?</a>
-                <a class="menu__item" href="#awards">Awards</a>
-                <a class="menu__item" href="#experience">Experience</a>
-                <a class="menu__item" href="#my-portfolio">My Portfolio</a>
-                <a class="menu__item" href="#contact">Contact</a>
-            </ul>
-        </nav>
+        <nav class="menu">
+            <a class="menu__item" href="#biography">Biography</a>
+            <a class="menu__item" href="#what-i-do">What I do?</a>
+            <a class="menu__item" href="#awards">Awards</a>
+            <a class="menu__item" href="#experience">Experience</a>
+            <a class="menu__item" href="#my-portfolio">My Portfolio</a>
+            <a class="menu__item" href="#contact">Contact</a>
+        </nav>        
     </div> 
     <div class="header_flex__item--B">
-    <img class="big_avatar"src="podklady/avatar.svg" alt="" >  
+    <img class="big_avatar" src="podklady/avatar.svg" alt="" >  
     </div>
     </header>
     <div class="background__color--secondary">
         <section id="biography">
             <div class="grid__biography">
-                <div class="grid__biography--item-A">
-                    <figure></figure>
+                <figure class="grid__biography--item-A">
                     <figcaption>
                         <hgroup>
                             <h2>Jane Doe</h2>
                             <p class="little_subtitle">Full-Stack Developer</p>
                         </hgroup> 
                     </figcaption>
-                </div>
+                </figure>
                 <div class="grid__biography--item-B">
                     <h3 class="section__title">Biography</h3>
                     <p>I'm Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco.
@@ -69,21 +66,21 @@
             <h3 class="section__title">What I do?</h3>
             <div class="what_i_do_flex">
                 <article class="what-i-do_flex__item background__color--primary top_circle">
-                    <img class="top_img" src="podklady/pencil-alt-solid.svg" alt="" width="75px">
+                    <img class="top_img" src="podklady/pencil-alt-solid.svg" alt="" width="75">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Doloribus est, aut fugiat molestiae, dolor voluptates veniam
                         deserunt accusamus similique</p>
                 </article>
                 <article class="what-i-do_flex__item background__color--primary top_circle">
-                    <img class="top_img" src="podklady/desktop-solid.svg" alt="" width="75px">
+                    <img class="top_img" src="podklady/desktop-solid.svg" alt="" width="75">
                     <h4>Web Development</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Doloribus est, aut fugiat molestiae, dolor voluptates veniam
                         deserunt accusamus similique</p>
                 </article>
                 <article class="what-i-do_flex__item background__color--primary top_circle">
-                    <img class="top_img" src="podklady/bullseye-solid.svg" alt="" width="75px">
+                    <img class="top_img" src="podklady/bullseye-solid.svg" alt="" width="75">
                     <h4>Seo Marketing</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Doloribus est, aut fugiat molestiae, dolor voluptates veniam
@@ -95,15 +92,15 @@
             <h3 class="section__title">Awards</h3>
             <div class="awards_flex">
                 <div class="awards_flex__item background__color--primary">
-                    <img src="podklady/trophy-solid.svg" alt="" width="50px">
+                    <img src="podklady/trophy-solid.svg" alt="" width="50">
                     <p>Creative Designer</p>
                 </div>
                 <div class="awards_flex__item background__color--primary">
-                    <img src="podklady/trophy-solid.svg" alt="" width="50px">
-                    <p>Yearly Best Performer</pú>
+                    <img src="podklady/trophy-solid.svg" alt="" width="50">
+                    <p>Yearly Best Performer</p>
                 </div>
                 <div class="awards_flex__item background__color--primary">
-                    <img src="podklady/trophy-solid.svg" alt="" width="50px">
+                    <img src="podklady/trophy-solid.svg" alt="" width="50">
                     <p>Best Learner Award</p>
                 </div>
             </div>
@@ -117,7 +114,7 @@
                     <div class="inside_experience_flex__item--A">
                         <p>
                             <time datetime="2021-02">Feb 2021 -</time>
-                            <time datetime="">Present</time>
+                            <time datetime="2024-06-30">Present</time>
                         </p>
                         <span class="mark mark__full-time">Full Time</span>
                     </div>
@@ -135,7 +132,7 @@
                     <div class="inside_experience_flex__item--A">
                         <p>
                             <time datetime="2020-03">Mar 2020 -</time>
-                            <time datetime="">Present</time>
+                            <time datetime="2024-06-30">Present</time>
                         </p>
                         <span class="mark mark__part-time">Part Time</span>   
                     </div> 
@@ -153,7 +150,7 @@
                     <div class="inside_experience_flex__item--A">
                         <p>
                             <time datetime="2019-01">Jan 2019 -</time>
-                            <time datetime="">Present</time>
+                            <time datetime="2024-06-30">Present</time>
                         </p>
                         <span class="mark mark__full-time">Full Time</span>
                     </div>
@@ -175,42 +172,48 @@
                 <div class="my_portfolio_grid">
                     <article class="my_portfolio_grid__item">
                         <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
-                        <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
+                        <h4>Lorem ipsum</h4>
+                        <time class="date" datetime="2305-07-13">07/13/2305</time>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
                     </article>
                     <article class="my_portfolio_grid__item">
                         <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
-                        <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
-                            eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
-                    </article>
-                    <article class="mmy_portfolio_grid__item">
-                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
-                        <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
+                        <h4>Lorem ipsum</h4>
+                        <time class="date" datetime="2305-07-13">07/13/2305</time>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
                     </article>
                     <article class="my_portfolio_grid__item">
                         <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
-                        <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
-                            eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
-                    </article>
-                    <article class="mmy_portfolio_grid__item">
-                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
-                        <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
+                        <h4>Lorem ipsum</h4>
+                        <time class="date" datetime="2305-07-13">07/13/2305</time>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
                     </article>
                     <article class="my_portfolio_grid__item">
                         <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
-                        <h4>Lorem ipsum <p class="date"><time datetime="2305-07-13">07/13/2305</time></p></h4>
+                        <h4>Lorem ipsum</h4>
+                        <time class="date" datetime="2305-07-13">07/13/2305</time>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
+                            eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
+                    </article>
+                    <article class="my_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                        <h4>Lorem ipsum</h4>
+                        <time class="date" datetime="2305-07-13">07/13/2305</time>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
+                            eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
+                    </article>
+                    <article class="my_portfolio_grid__item">
+                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                        <h4>Lorem ipsum</h4>
+                        <time class="date" datetime="2305-07-13">07/13/2305</time>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
@@ -259,6 +262,5 @@
         </div>
         <div><small>© Lorem ipsum dolor sit amet 2022</small></div>
     </footer>
-    <!--na githubu kod na button scrollUp -->
 </body>
 </html>

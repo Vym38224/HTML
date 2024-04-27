@@ -94,14 +94,17 @@ body::after{
     display: grid;
     grid-template-columns: 1fr 2.5fr ;
     grid-template-areas: 
-        "A B";}
+        "A B";
+    margin-top:4vw;}
 .grid__biography--item-A {grid-area: A;}
-.grid__biography--item-B{
-    grid-area:B;
-    align-self: center;}
+.grid__biography--item-B{grid-area:B;}
 figure{
     position: relative;
-    z-index: 1;}
+    z-index: 1;
+    align-self: center;}
+figcaption{
+    margin-top:12em;
+    padding-left:1em;}
 figure::after{
     background-image: url("podklady/avatar.svg");
     background-size: 208px;
@@ -112,10 +115,9 @@ figure::after{
     border-radius: 50%;
     width: 13rem;
     height: 13rem;
-    z-index: -1;}
-figcaption{
-    margin-top:15em;
-    margin-left:3.5em;}
+    z-index: -1;
+    top:-1.5em;}
+
 /* vlnka */
 .border-dark{
     background-image: url("podklady/border-dark.png");
@@ -194,14 +196,15 @@ figcaption{
     font-weight: 400;
     font-size: 0.9em;
     color:white;
-    padding: 0.5em;
+    padding: 0.4em;
     border-radius: 10%;}
 .mark__full-time{background-color:#ff9301;}
 .mark__part-time{background-color:#555555;}
+/* sekce my portfolio */
 .date{
     margin-top: 0;
     font-size: 0.6em;}
-/* sekce my portfolio */
+.my_portfolio_grid__item h4 {margin-bottom: 0;}
 #my-portfolio{margin-bottom: 2em;}
 .my_portfolio_grid{
     display: grid;
@@ -295,15 +298,18 @@ footer div {
         top: -10rem;
         z-index: -1;
         left: 53%;}
-    figure{margin-left: 1em;}
-    figcaption{margin-left:2em;}}
+    
+    figcaption figure{margin-left:1em;}}
 @media (max-width: 1100px) and (min-width:960px){
     .header_flex__item--A{flex:58%;}
     .header_flex__item--B{flex:42%;}}
 @media (max-width:960px){
+    section{padding-top: 2vw;}
     .what_i_do_flex {flex-direction: column;}
     .what-i-do_flex__item{margin-bottom: 1em;}
     .what-i-do_flex__item{margin-right: 0em;}
+    .inside_experience_flex__item--A{flex:1}
+    .inside_experience_flex__item--B{flex:4.5}
     .flex-contact {
         flex-direction: column;
         padding-bottom: 2vw;}  
@@ -320,9 +326,7 @@ footer div {
     .grid__biography--item-A{
         margin:0 auto;
         margin-bottom:2em;}
-    figcaption{margin-left:0em;}
-    figure{left:-3em;}
-    .border-dark{background-size: 21%;}}
+    .border-dark{background-size: 20%;}}
 @media (max-width: 765px) {
     .awards_flex__item:first-child{padding-top: 3.5em;}
     .awards_flex__item:last-child{padding-top: 3.5em;}}
