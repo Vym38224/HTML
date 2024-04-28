@@ -31,7 +31,7 @@ p, span, small{
     font-weight: 400;
     color: #555555;
     margin-bottom:0em;}
-.hello{margin-bottom: -1em;}
+.introduction{margin-bottom: -1em;}
 .section__title{
     width: fit-content;
     z-index: 1;
@@ -73,7 +73,7 @@ p, span, small{
     text-decoration: none;
     color: #555555;}
 .menu__item:hover{border-bottom: 3px solid #ff9301;}
-body::after{
+.header_flex__item--B::after{
     content:" ";
     display: inline-block;
     position: absolute;
@@ -101,23 +101,17 @@ body::after{
 figure{
     position: relative;
     z-index: 1;
-    align-self: center;}
-figcaption{
-    margin-top:12em;
-    padding-left:1em;}
-figure::after{
-    background-image: url("podklady/avatar.svg");
-    background-size: 208px;
-    content:" ";
-    display: inline-block;
-    position: absolute;
-    background-color: #ff9301;
-    border-radius: 50%;
-    width: 13rem;
-    height: 13rem;
-    z-index: -1;
-    top:-1.5em;}
-
+    align-self: center;
+    margin-top: -1em;}
+figcaption{padding-left:1em;}
+.s_avatar{width:208px;
+        background: #ff9301;
+        border-radius: 50%;
+        width: 13.5rem;
+        height: 13.5rem;
+        z-index: -1;
+        top:0;
+        left:-0.2em}
 /* vlnka */
 .border-dark{
     background-image: url("podklady/border-dark.png");
@@ -160,6 +154,7 @@ figure::after{
     display: flex;
     padding-bottom: 2em;}
 .awards_flex__item{
+    display: flex;;
     flex-direction:column;
     border: 1px;
     text-align: center;
@@ -168,7 +163,9 @@ figure::after{
     border-radius: 0.9em;
     margin-right: 1em;
     margin-bottom: 1em;
-    flex: 1;}
+    flex: 1;
+    align-items: center;}
+.under_trophy{padding-top:1em;}
 .awards_flex__item:last-child{margin-right: 0em;}
 /* sekce experience */
 .experience_flex{
@@ -379,6 +376,7 @@ footer div {
         gap:1em;
         flex-grow: 2;
         text-align: start;}
+        .under_trophy{padding-top:0em;}
     .awards_flex__item:first-child {padding-top: 1em;}
     .awards_flex__item:last-child {padding-top: 1em;}
     .awards_flex__item p {margin-top: 0.75em;}
