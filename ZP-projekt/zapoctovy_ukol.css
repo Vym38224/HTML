@@ -63,7 +63,8 @@ p, span, small{
 .header_flex{
     display: flex;
     position: relative;}
-.header_flex__item--A, .header_flex__item--B{flex:50%;}
+.header_flex__item--A, .header_flex__item--B{flex:1;}
+
 .menu{
     margin-top: 3em;
     margin-bottom: 3em;
@@ -295,11 +296,8 @@ footer div {
         top: -10rem;
         z-index: -1;
         left: 53%;}
-    
     figcaption figure{margin-left:1em;}}
-@media (max-width: 1100px) and (min-width:960px){
-    .header_flex__item--A{flex:58%;}
-    .header_flex__item--B{flex:42%;}}
+
 @media (max-width:960px){
     section{padding-top: 2vw;}
     .what_i_do_flex {flex-direction: column;}
