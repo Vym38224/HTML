@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header_flex">
-        <div class="header_flex__item--A">
+    <header class="flex">
+        <div class="flex__item--left">
         <hgroup>
             <p class="introduction">Hello, My name is</p>
             <h1>Jane Doe</h1>
@@ -30,21 +30,21 @@
             <a class="menu__item" href="#contact">Contact</a>
         </nav>        
     </div> 
-    <div class="header_flex__item--B">
+    <div class="flex__item--right">
     <img class="big_avatar" src="podklady/avatar.svg" alt="" >  
     </div>
     </header>
     <div class="background__color--secondary">
         <section id="biography">
-            <div class="grid__biography">
-                <figure class="grid__biography--item-A">
-                    <img class="s_avatar" src="podklady/avatar.svg" alt="" >
+            <div class="grid grid__horizontal">
+                <figure class="grid__horizontal--item-A">
+                    <img class="small_avatar" src="podklady/avatar.svg" alt="" >
                     <figcaption>                       
                         <h2>Jane Doe</h2>
                         <p class="little_subtitle">Full-Stack Developer</p>
                     </figcaption>
                 </figure>
-                <div class="grid__biography--item-B">
+                <div class="grid__horizontal--item-B">
                     <h3 class="section__title">Biography</h3>
                     <article>
                         <p>I'm Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco.
@@ -65,22 +65,22 @@
         <div class="border-dark"></div>
         <section id="what-i-do">
             <h3 class="section__title">What I do?</h3>
-            <div class="what_i_do_flex">
-                <article class="what-i-do_flex__item background__color--primary top_circle">
+            <div class="flex">
+                <article class="flex__item background__color--primary top_circle">
                     <img class="top_img" src="podklady/pencil-alt-solid.svg" alt="" width="75">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Doloribus est, aut fugiat molestiae, dolor voluptates veniam
                         deserunt accusamus similique</p>
                 </article>
-                <article class="what-i-do_flex__item background__color--primary top_circle">
+                <article class="flex__item background__color--primary top_circle">
                     <img class="top_img" src="podklady/desktop-solid.svg" alt="" width="75">
                     <h4>Web Development</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Doloribus est, aut fugiat molestiae, dolor voluptates veniam
                         deserunt accusamus similique</p>
                 </article>
-                <article class="what-i-do_flex__item background__color--primary top_circle">
+                <article class="flex__item background__color--primary top_circle">
                     <img class="top_img" src="podklady/bullseye-solid.svg" alt="" width="75">
                     <h4>Seo Marketing</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -91,16 +91,16 @@
         </section>
         <section id="awards">
             <h3 class="section__title">Awards</h3>
-            <div class="awards_flex">
-                <div class="awards_flex__item background__color--primary">
+            <div class="flex">
+                <div class="flex__item flex inside_flex__item background__color--primary">
                     <img src="podklady/trophy-solid.svg" alt="" width="50">
                     <span class="under_trophy">Creative Designer</span>
                 </div>
-                <div class="awards_flex__item background__color--primary">
+                <div class="flex__item flex inside_flex__item background__color--primary">
                     <img src="podklady/trophy-solid.svg" alt="" width="50">
                     <span class="under_trophy">Yearly Best Performer</span>
                 </div>
-                <div class="awards_flex__item background__color--primary">
+                <div class="flex__item flex inside_flex__item background__color--primary">
                     <img src="podklady/trophy-solid.svg" alt="" width="50">
                     <span class="under_trophy">Best Learner Award</span>
                 </div>
@@ -109,17 +109,17 @@
     </div>
     <div>
         <section id="experience">
-            <div class="experience_flex">
+            <div class="flex_column">
                 <h3 class="section__title">Experience</h3>
-                <article class="experience_flex__item inside_experience_flex">
-                    <div class="inside_experience_flex__item--A">
+                <article class="flex__item flex background__color--secondary">
+                    <div class="inside_flex__item--A">
                         <p>
                             <time datetime="2021-02">Feb 2021 -</time>
                             <time datetime="2024-06-30">Present</time>
                         </p>
                         <span class="mark mark__full-time">Full Time</span>
                     </div>
-                    <div class="inside_experience_flex__item--B">
+                    <div class="inside_flex__item--B">
                         <h4>Google LLC - Sr.Front-end Engineer</h4>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -129,15 +129,15 @@
                         </p>
                     </div>
                 </article>
-                <article class="experience_flex__item inside_experience_flex">
-                    <div class="inside_experience_flex__item--A">
+                <article class="flex__item flex background__color--secondary">
+                    <div class="inside_flex__item--A">
                         <p>
                             <time datetime="2020-03">Mar 2020 -</time>
                             <time datetime="2024-06-30">Present</time>
                         </p>
                         <span class="mark mark__part-time">Part Time</span>   
                     </div> 
-                    <div class="inside_experience_flex__item--B">
+                    <div class="inside_flex__item--B">
                         <h4>Ridian IT - Visual Designer</h4>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -147,15 +147,15 @@
                         </p>
                     </div>
                 </article>
-                <article class="experience_flex__item inside_experience_flex">
-                    <div class="inside_experience_flex__item--A">
+                <article class=" flex__item flex background__color--secondary">
+                    <div class="inside_flex__item--A">
                         <p>
                             <time datetime="2019-01">Jan 2019 -</time>
                             <time datetime="2024-06-30">Present</time>
                         </p>
                         <span class="mark mark__full-time">Full Time</span>
                     </div>
-                    <div class="inside_experience_flex__item--B">
+                    <div class="inside_flex__item--B">
                         <h4>IB Themes - Animation Artist</h4>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -170,49 +170,49 @@
         <section id="my-portfolio">
             <div>
                 <h3 class="section__title">My Portfolio</h3>
-                <div class="my_portfolio_grid">
-                    <article class="my_portfolio_grid__item">
-                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                <div class="grid layout">
+                    <article class="grid__item">
+                        <img class="rectangle_img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
                         <h4>Lorem ipsum</h4>
                         <time class="date" datetime="2305-07-13">07/13/2305</time>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
                     </article>
-                    <article class="my_portfolio_grid__item">
-                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                    <article class="grid__item">
+                        <img class="rectangle_img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
                         <h4>Lorem ipsum</h4>
                         <time class="date" datetime="2305-07-13">07/13/2305</time>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
                     </article>
-                    <article class="my_portfolio_grid__item">
-                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                    <article class="grid__item">
+                        <img class="rectangle_img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
                         <h4>Lorem ipsum</h4>
                         <time class="date" datetime="2305-07-13">07/13/2305</time>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
                     </article>
-                    <article class="my_portfolio_grid__item">
-                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                    <article class="grid__item">
+                        <img class="rectangle_img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
                         <h4>Lorem ipsum</h4>
                         <time class="date" datetime="2305-07-13">07/13/2305</time>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
                     </article>
-                    <article class="my_portfolio_grid__item">
-                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                    <article class="grid__item">
+                        <img class="rectangle_img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
                         <h4>Lorem ipsum</h4>
                         <time class="date" datetime="2305-07-13">07/13/2305</time>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt vero, quaerat quisquam in ipsa tempora nihil obcaecati
                             eos natus porro ipsam voluptate doloribus deleniti autem amet</p>
                     </article>
-                    <article class="my_portfolio_grid__item">
-                        <img class="my_portfolio__img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
+                    <article class="grid__item">
+                        <img class="rectangle_img" src="https://dummyimage.com/640x360/f7f7ff/555" alt="">
                         <h4>Lorem ipsum</h4>
                         <time class="date" datetime="2305-07-13">07/13/2305</time>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -226,17 +226,17 @@
     <div class="background__color--secondary">
         <section id="contact">
             <h3 class="section__title">Contact</h3>
-            <div class="flex-contact">
-                <div class="flex-contact__item flex-contact__item--left">
+            <div class="flex">
+                <div class="flex__half flex__half--left">
                     <h4>What's your story? Get in touch</h4>
                     <p>Always avaiable for freelancing if the right project comes along, Feel free to contact me.</p>
-                    <address class="flex-contact flex-contact__touch">
-                        <div class="flex-contact__touch--item flex-contact__touch--item-marker"><img src="podklady/map-marker-alt-solid.svg" alt="" width="20"><a class="flex-contact__touch--right" >Champ de Mars, 5 Av. Anatole France, 75007 Paris, Francie</a></div>
-                        <div class="flex-contact__touch--item"><img src="podklady/envelope-regular.svg" alt="" width="25"><a class="flex-contact__touch--right flex-contact__touch--sup" >support@domain.com</a></div>
-                        <div class="flex-contact__touch--item flex-contact__touch--item-mobile"><img src="podklady/mobile-alt-solid.svg" alt="" width="15"><a class="flex-contact__touch--right" >555-2368</a></div>
+                    <address class="flex__touch">
+                        <div class="flex__touch--item flex__touch--item-marker"><img src="podklady/map-marker-alt-solid.svg" alt="" width="20"><a class="flex__touch--right" >Champ de Mars, 5 Av. Anatole France, 75007 Paris, Francie</a></div>
+                        <div class="flex__touch--item"><img src="podklady/envelope-regular.svg" alt="" width="25"><a class="flex__touch--right flex__touch--sup" >support@domain.com</a></div>
+                        <div class="flex__touch--item flex__touch--item-mobile"><img src="podklady/mobile-alt-solid.svg" alt="" width="15"><a class="flex__touch--right" >555-2368</a></div>
                     </address>
                 </div>
-                <div class="flex-contact__item">
+                <div class="flex__half">
                     <h4>Say Something</h4>
                     <form>  
                         <div class="upper_form">

@@ -59,12 +59,11 @@ p, span, small{
     padding-left: 1.8em;
     font-size: 0.9em;
     font-weight: 400;}
+.flex{display:flex}
+.grid{display: grid;}
 /* header */
-.header_flex{
-    display: flex;
-    position: relative;}
-.header_flex__item--A, .header_flex__item--B{flex:1;}
-
+.flex__item--left, .flex__item--right{flex:1;}
+.flex__item--right{position: relative;}
 .menu{
     margin-top: 3em;
     margin-bottom: 3em;
@@ -74,7 +73,7 @@ p, span, small{
     text-decoration: none;
     color: #555555;}
 .menu__item:hover{border-bottom: 3px solid #ff9301;}
-.header_flex__item--B::after{
+.flex__item--right::after{
     content:" ";
     display: inline-block;
     position: absolute;
@@ -84,35 +83,34 @@ p, span, small{
     width: 65rem;
     height: 65rem;
     top: -30rem;
-    z-index: -1;
-    left: 51%;}
+    z-index: -1;}
 .big_avatar{
     position: absolute;
     right: 0;
     bottom: 0;}
 /* sekce biography */
-.grid__biography{
-    display: grid;
+.grid__horizontal{
     grid-template-columns: 1fr 2.5fr ;
     grid-template-areas: 
         "A B";
     margin-top:4vw;}
-.grid__biography--item-A {grid-area: A;}
-.grid__biography--item-B{grid-area:B;}
+.grid__horizontal--item-A {grid-area: A;}
+.grid__horizontal--item-B{grid-area:B;}
 figure{
     position: relative;
     z-index: 1;
     align-self: center;
     margin-top: -1em;}
 figcaption{padding-left:1em;}
-.s_avatar{width:208px;
-        background: #ff9301;
-        border-radius: 50%;
-        width: 13.5rem;
-        height: 13.5rem;
-        z-index: -1;
-        top:0;
-        left:-0.2em}
+.small_avatar{
+    width:208px;
+    background: #ff9301;
+    border-radius: 50%;
+    width: 13.5rem;
+    height: 13.5rem;
+    z-index: -1;
+    top:0;
+    left:-0.2em}
 /* vlnka */
 .border-dark{
     background-image: url("podklady/border-dark.png");
@@ -123,8 +121,7 @@ figcaption{padding-left:1em;}
     background-size: 12%;
     margin-top: 4vw;}
 /* sekce what i do */
-.what_i_do_flex {display: flex;}
-.what-i-do_flex__item{
+.flex__item{
     border: 1px;
     text-align: left;
     padding: 1em;
@@ -132,7 +129,7 @@ figcaption{padding-left:1em;}
     margin-right: 1em;
     flex:1;
     overflow: hidden;}
-.what-i-do_flex__item:last-child{ margin-right: 0em;}
+.flex__item:last-child{ margin-right: 0em;}
 .top_circle{
     position: relative;
     z-index: 1;}
@@ -151,41 +148,27 @@ figcaption{padding-left:1em;}
     left: -1.5rem;
     z-index: -1;}
 /* sekce awards */
-.awards_flex{
-    display: flex;
-    padding-bottom: 2em;}
-.awards_flex__item{
-    display: flex;;
+.inside_flex__item{
     flex-direction:column;
-    border: 1px;
     text-align: center;
     padding: 2em;
     margin: auto;
-    border-radius: 0.9em;
-    margin-right: 1em;
     margin-bottom: 1em;
-    flex: 1;
-    align-items: center;}
+    align-items: center;
+    margin-right: 1em;}
 .under_trophy{padding-top:1em;}
-.awards_flex__item:last-child{margin-right: 0em;}
+.inside_flex__item:last-child{margin-right: 0em;}
 /* sekce experience */
-.experience_flex{
-    display:flex;
-    flex-direction: column;}
-.experience_flex__item{
-    border: 1px;
-    background-color: #f7f7ff;
-    padding: 1em;
+.flex_column{flex-direction: column;}
+#experience .flex__item{
     padding-left: 2em;
     padding-right: 2em;
-    border-radius: 0.9em;
     margin-bottom: 1em;}
-.experience_flex__item:last-child{margin-bottom: 0em;}
-.inside_experience_flex{display:flex;}
-.inside_experience_flex__item--A{
+#experience .flex__item:last-child{margin-bottom: 0em;}
+.inside_flex__item--A{
     flex: 1.5;
     padding-top: 2em;}
-.inside_experience_flex__item--B{
+.inside_flex__item--B{
     flex: 4;
     padding-bottom: 1em;
     padding-left: 2em;
@@ -202,32 +185,30 @@ figcaption{padding-left:1em;}
 .date{
     margin-top: 0;
     font-size: 0.6em;}
-.my_portfolio_grid__item h4 {margin-bottom: 0;}
+.grid__item h4 {margin-bottom: 0;}
 #my-portfolio{margin-bottom: 2em;}
-.my_portfolio_grid{
-    display: grid;
+.layout{
     grid-gap: 1em;
     grid-template-columns: repeat(auto-fill,  minmax(300px, 1fr));}
-.my_portfolio__img {max-width: 100%;}
+.rectangle_img {max-width: 100%;}
 /* sekce contact */
 #contact{padding-bottom:1em;}
 address{font-style: normal;}
-.flex-contact{display:flex;}
-.flex-contact__item{
+.flex__half{
     flex: 0 0 50%; 
     box-sizing: border-box;}
-.flex-contact__item--left{padding-top: 2.5vw;}
-.flex-contact__touch{flex-direction: column;}
-.flex-contact__touch--item{padding-top: 0.6em;}
-.flex-contact__touch--item-marker{padding-left: 3px;}
-.flex-contact__touch--item-mobile{padding-left: 5px;}
-.flex-contact__touch--sup{margin-left:-4px}
-.flex-contact__touch--right{
+.flex__half--left{padding-top: 2.5vw;}
+.flex__touch{flex-direction: column;}
+.flex__touch--item{padding-top: 0.6em;}
+.flex__touch--item-marker{padding-left: 3px;}
+.flex__touch--item-mobile{padding-left: 5px;}
+.flex__touch--sup{margin-left:-4px}
+.flex__touch--right{
     font-weight: bold;
     text-decoration: none;
     color:black;
     padding-left: 1em;}
-.flex-contact__touch--item img{
+.flex__touch--item img{
     display: inline-block;
     vertical-align: middle;}
 form input, form textarea{
@@ -290,48 +271,57 @@ footer div {
     .border-dark{
         margin:4vw;
         margin-bottom:-1em;}
-    body::after{
-        width: 40rem;
-        height: 40rem;
-        top: -10rem;
+    figcaption figure{margin-left:1em;}
+    .flex__item--right::after{
+        content:" ";
+        display: inline-block;
+        position: absolute;
+        background-color: #ff9301;
+        opacity: 50%;
+        border-radius: 50%;
+        width: 55rem;
+        height: 55rem;
+        top: -20rem;
         z-index: -1;
-        left: 53%;}
-    figcaption figure{margin-left:1em;}}
-
+        right: -23em;}
+    .flex__item--left{flex:1.35}
+    .flex__item--left p {padding-right:2em;}
+    }
 @media (max-width:960px){
     section{padding-top: 2vw;}
-    .what_i_do_flex {flex-direction: column;}
-    .what-i-do_flex__item{margin-bottom: 1em;}
-    .what-i-do_flex__item{margin-right: 0em;}
-    .inside_experience_flex__item--A{flex:1}
-    .inside_experience_flex__item--B{flex:4.5}
-    .flex-contact {
+    .flex {flex-direction: column;}
+    #awards .flex{flex-direction: row;}
+    #awards .inside_flex__item{
         flex-direction: column;
-        padding-bottom: 2vw;}  
+        margin-right:1em;}
+    #awards .inside_flex__item:last-child{margin-right:0em;}
+    #experience .flex{flex-direction: row;}
+    .flex__item{margin-bottom: 1em;
+                margin-right: 0em;}
+    .inside_flex__item--A{flex:1}
+    .inside_flex__item--B{flex:4.5}
     .map {margin-top: 1vw;}
-    .flex-contact__item--left{padding-top: 0em;} 
-    .big_avatar,body::after,.header_flex__item--B{display: none;} 
-    .header_flex__item--A p {padding-right:60%;}
-    .grid__biography{
+    .flex__half--left{padding-top: 0em;} 
+    .big_avatar,.flex__item--right{display: none;} 
+    .grid__horizontal{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "A"
             "B";}
-    .grid__biography--item-A{
+    .grid__horizontal--item-A{
         margin:0 auto;
         margin-bottom:2em;}
     .border-dark{background-size: 20%;}}
-@media (max-width: 765px) {
-    .awards_flex__item:first-child{padding-top: 3.5em;}
-    .awards_flex__item:last-child{padding-top: 3.5em;}}
-@media (max-width: 714px) {.awards_flex__item:last-child{padding-top: 2em;}}
-@media (max-width: 669px) {.awards_flex__item:first-child{padding-top: 2em;}}
+@media (max-width: 766px) {
+    .inside_flex__item:first-child{padding-top: 3.5em;}
+    .inside_flex__item:last-child{padding-top: 3.5em;}}
+@media (max-width: 714px) {.inside_flex__item:last-child{padding-top: 2em;}}
+@media (max-width: 669px) {.inside_flex__item:first-child{padding-top: 2em;}}
 @media (max-width: 560px) {
     .upper_form{
         display: block;
         margin-right: 1.8em;}
-    .header_flex__item--A p {padding-right:0%;}
     .menu{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -354,18 +344,20 @@ footer div {
     .inside_experience_flex{
         flex-direction: column;
         padding:1em}                   
-    .inside_experience_flex__item--A{
+    .inside_flex__item--A{
         padding:0em;
         padding-bottom:1em;}
-    .inside_experience_flex__item--A p{margin:0em}
-    .inside_experience_flex__item--B{
+    .inside_flex__item--A p{margin:0em}
+    .inside_flex__item--B{
         padding:0em;
         border-left:none;}
-    .awards_flex{
+    #awards .flex{
         flex-direction: column;
-        padding-bottom:0.5em;}
-    .awards_flex__item{
-        display: flex;
+        padding-bottom:1em;}
+    #awards .inside_flex__item{
+        margin-right: 0em;
+        flex-direction: row;}
+    .inside_flex__item{
         flex-direction: row;
         padding:1em;
         margin-right: 1em;
@@ -374,10 +366,11 @@ footer div {
         gap:1em;
         flex-grow: 2;
         text-align: start;}
-        .under_trophy{padding-top:0em;}
-    .awards_flex__item:first-child {padding-top: 1em;}
-    .awards_flex__item:last-child {padding-top: 1em;}
-    .awards_flex__item p {margin-top: 0.75em;}
+    .inside_flex__item:first-child,.inside_flex__item:last-child{padding-top: 1em;}
+    .under_trophy{
+        padding-bottom:0.25em;
+        padding-top:0em;}
+    #experience .flex{flex-direction: column;}
     footer{
         flex-direction:column;
         gap:0.5em;
