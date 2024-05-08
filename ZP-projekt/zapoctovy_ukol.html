@@ -17,7 +17,7 @@
             <h1>Jane Doe</h1>
             <p class="subtitle">Full-Stack Developer</p>
         </hgroup>
-        <p>
+        <p class="about-me">
         I design and develop services for customers of all sizes, specializing in
         creating stylish, modern websites, web services and online stores
         </p>
@@ -89,7 +89,7 @@
         </section>
         <section id="awards">
             <h3 class="section__title">Awards</h3>
-            <div class="flex flex_row">
+            <div class="flex flex_column flex_row">
                 <div class="inside_flex__item flex__item flex background__color--primary">
                     <img src="podklady/trophy-solid.svg" alt="" width="50">
                     <span class="under_trophy">Creative Designer</span>
@@ -109,7 +109,7 @@
         <section id="experience">
             <div class="flex_column">
                 <h3 class="section__title">Experience</h3>
-                <article class="flex_row flex__item flex background__color--secondary flex__item--spaces">
+                <article class="flex_row flex_column flex__item flex background__color--secondary flex__item--spaces">
                     <div class="inside_flex__item--A">
                         <p>
                             <time datetime="2021-02">Feb 2021 -</time>
@@ -127,7 +127,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="flex_row flex__item flex background__color--secondary flex__item--spaces">
+                <article class="flex_row flex_column flex__item flex background__color--secondary flex__item--spaces">
                     <div class="inside_flex__item--A">
                         <p>
                             <time datetime="2020-03">Mar 2020 -</time>
@@ -145,7 +145,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="flex_row flex__item flex background__color--secondary flex__item--spaces">
+                <article class="flex_row flex_column flex__item flex background__color--secondary flex__item--spaces">
                     <div class="inside_flex__item--A">
                         <p>
                             <time datetime="2019-01">Jan 2019 -</time>
@@ -261,5 +261,7 @@
         </div>
         <div><small>© Lorem ipsum dolor sit amet 2022</small></div>
     </footer>
+    <button onclick="scrollUp()" class="button--up">UP</button>
+	    <script src="script.js"></script>
 </body>
 </html>
