@@ -11,7 +11,8 @@ body {
 section, header, footer {
     max-width: 1140px;
     margin: auto;}
-section{padding-top: 4vw;}
+section{padding-top: 4vw;
+        padding-bottom: 2em;}
 h1{
     font-size: 6em;
     font-weight: 900;
@@ -92,11 +93,11 @@ p, span, small{
     margin-right: 1em;}
 .inside_flex__item:last-child{margin-right: 0em;}
 .flex_column{flex-direction: column;}
-#experience .flex__item{
+.flex__item--spaces{
     padding-left: 2em;
-    padding-right: 2em;
-    margin-bottom: 1em;}
-#experience .flex__item:last-child{margin-bottom: 0em;}
+    margin-bottom: 1em;
+    margin-right:0em;}
+.flex__item--spaces:last-child{margin-bottom: 0em;}
 .inside_flex__item--A{
     flex: 1.5;
     padding-top: 2em;}
@@ -201,9 +202,7 @@ figcaption{padding-left:1em;}
     grid-gap: 1em;
     grid-template-columns: repeat(auto-fill,  minmax(300px, 1fr));}
 .grid__item h4 {margin-bottom: 0;}
-#my-portfolio{margin-bottom: 2em;}
 .rectangle_img {max-width: 100%;}
-#contact{padding-bottom:1em;}
 address{font-style: normal;}
 form input, form textarea{
     width: 100%;
@@ -282,14 +281,13 @@ footer div {
 @media (max-width:960px){
     section{padding-top: 2vw;}
     .flex {flex-direction: column;}
-    #awards .flex{flex-direction: row;}
-    #awards .inside_flex__item{
-        flex-direction: column;
-        margin-right:1em;}
-    #awards .inside_flex__item:last-child{margin-right:0em;}
-    #experience .flex{flex-direction: row;}
+    .flex_row{flex-direction: row;}
     .flex__item{margin-bottom: 1em;
                 margin-right: 0em;}
+    .inside_flex__item{
+        flex-direction: column;
+        margin-right:1em;}
+    .inside_flex__item:last-child{margin-right:0em;}
     .inside_flex__item--A{flex:1}
     .inside_flex__item--B{flex:4.5}
     .map {margin-top: 1vw;}
